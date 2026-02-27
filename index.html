@@ -169,6 +169,246 @@
     </section>
     <!--::about_us part end::-->
 
+    <!-- 
+==============================================
+PHOTOGRAPHER SECTION
+Insert this between the closing </section> of about_us 
+and the opening <section class="gallery_part"> tag
+==============================================
+-->
+
+<!--::photographer section start::-->
+<section class="photographer_section padding_top">
+    <div class="photographer_container">
+
+        <!-- LEFT: Floating Circular Images -->
+        <div class="photographer_visual">
+            <div class="photo_orbit">
+
+                <!-- Center (main/large) -->
+                <div class="photo_bubble photo_center">
+                    <img src="img/team/photographer-main.webp" alt="Lead Photographer">
+                </div>
+
+                <!-- Top Left -->
+                <div class="photo_bubble photo_tl">
+                    <img src="img/team/photographer-2.webp" alt="Photographer">
+                </div>
+
+                <!-- Top Right -->
+                <div class="photo_bubble photo_tr">
+                    <img src="img/team/photographer-3.webp" alt="Photographer">
+                </div>
+
+                <!-- Bottom Left -->
+                <div class="photo_bubble photo_bl">
+                    <img src="img/team/photographer-4.webp" alt="Photographer">
+                </div>
+
+                <!-- Bottom Right -->
+                <div class="photo_bubble photo_bc">
+                    <img src="img/team/photographer-5.webp" alt="Photographer">
+                </div>
+
+                <!-- Decorative dots -->
+                <span class="orbit_dot dot_1"></span>
+                <span class="orbit_dot dot_2"></span>
+                <span class="orbit_dot dot_3"></span>
+                <span class="orbit_dot dot_4"></span>
+            </div>
+        </div>
+
+        <!-- RIGHT: Name & About -->
+        <div class="photographer_content">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">Meet Our Photographer</span>
+                    <h2>Keshav Praveen</h2>
+                </div>
+                <p>
+                    Keshav is a passionate visual storyteller with over 8 years of experience in professional
+                    photography and videography. From capturing the raw emotions of a wedding day to crafting
+                    bold brand visuals for businesses, he brings both artistic sensitivity and technical precision
+                    to every frame. His work has helped over 200+ clients across Tamil Nadu tell their stories
+                    through imagery that truly resonates.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--::photographer section end::-->
+
+
+<!-- 
+==============================================
+CSS — Copy everything below into your custom.css
+(remove the <style> tags when pasting into .css file)
+==============================================
+-->
+<style>
+
+/* ── Photographer Section ─────────────────────────────── */
+
+.photographer_container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* ── LEFT: Visual ─────────────────────────────────────── */
+.photographer_visual {
+    flex: 0 0 460px;
+    position: relative;
+    height: 480px;
+}
+
+.photo_orbit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.photo_bubble {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 36px rgba(0,0,0,0.16);
+    border: 4px solid #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo_bubble:hover {
+    transform: scale(1.08) !important;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.24);
+    z-index: 10;
+}
+
+.photo_bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Center large */
+.photo_center {
+    width: 185px;
+    height: 185px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border-width: 5px;
+    animation: float_c 6s ease-in-out infinite;
+}
+
+/* Top Left */
+.photo_tl {
+    width: 108px;
+    height: 108px;
+    top: 28px;
+    left: 55px;
+    animation: float_a 7s ease-in-out infinite;
+}
+
+/* Top Right */
+.photo_tr {
+    width: 112px;
+    height: 112px;
+    top: 18px;
+    right: 50px;
+    animation: float_b 8s ease-in-out infinite;
+}
+
+/* Bottom Left */
+.photo_bl {
+    width: 104px;
+    height: 104px;
+    bottom: 55px;
+    left: 38px;
+    animation: float_d 7.5s ease-in-out infinite;
+}
+
+/* Bottom Right */
+.photo_bc {
+    width: 110px;
+    height: 110px;
+    bottom: 42px;
+    right: 48px;
+    animation: float_e 6.5s ease-in-out infinite;
+}
+
+@keyframes float_c {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0);    }
+    50%       { transform: translate(-50%, -50%) translateY(-14px); }
+}
+@keyframes float_a {
+    0%, 100% { transform: translateY(0);    }
+    50%       { transform: translateY(-10px); }
+}
+@keyframes float_b {
+    0%, 100% { transform: translateY(0);    }
+    50%       { transform: translateY(-12px); }
+}
+@keyframes float_d {
+    0%, 100% { transform: translateY(0);   }
+    50%       { transform: translateY(-9px); }
+}
+@keyframes float_e {
+    0%, 100% { transform: translateY(0);    }
+    50%       { transform: translateY(-11px); }
+}
+
+/* Decorative dots */
+.orbit_dot {
+    position: absolute;
+    border-radius: 50%;
+    background: #c8a97a;
+    opacity: 0.3;
+}
+.dot_1 { width: 10px; height: 10px; top: 95px;    left: 205px; }
+.dot_2 { width:  7px; height:  7px; top: 345px;   left: 185px; }
+.dot_3 { width: 12px; height: 12px; top:  55px;   right: 195px; }
+.dot_4 { width:  8px; height:  8px; bottom: 105px; right: 215px; }
+
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 992px) {
+    .photographer_container {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 24px;
+    }
+    .photographer_visual {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+        height: 380px;
+        margin: 0 auto;
+    }
+    .photographer_content {
+        text-align: center;
+    }
+    .phg_divider {
+        margin: 0 auto 24px;
+    }
+    .phg_about {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .photographer_visual { height: 320px; }
+    .photo_center  { width: 145px; height: 145px; }
+    .photo_tl, .photo_tr, .photo_bl, .photo_bc { width: 82px; height: 82px; }
+    .phg_name { font-size: 30px; }
+}
+
+</style>
     
 
     <!-- gallery_part part start-->

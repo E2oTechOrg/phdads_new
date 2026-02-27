@@ -4686,3 +4686,180 @@
     background: #333;
     transform: scale(1.3);
   }
+
+  /* ── Global mobile improvements ── */
+@media (max-width: 480px) {
+
+  /* Disclaimer / Payment / Privacy / T&C / Shipping pages */
+  .disc-hero-banner,
+  .pay-hero-banner,
+  .pp-hero-banner,
+  .tc-hero-banner,
+  .sc-hero-banner {
+    padding: 25px 15px;
+    border-radius: 10px;
+  }
+
+  .disc-hero-icon-box,
+  .pay-hero-icon-box,
+  .pp-hero-icon-box,
+  .tc-hero-icon-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .disc-hero-icon-box i,
+  .pay-hero-icon-box i,
+  .pp-hero-icon-box i,
+  .tc-hero-icon-box i {
+    font-size: 26px;
+  }
+
+  .disc-content-wrapper,
+  .pay-content-wrapper,
+  .pp-content-wrapper,
+  .tc-content-wrapper,
+  .sc-content-wrapper {
+    padding: 20px 14px;
+    border-radius: 10px;
+  }
+
+  .disc-intro-notice,
+  .pay-intro-notice,
+  .pp-intro-notice,
+  .tc-intro-notice {
+    padding: 16px 14px;
+    border-radius: 8px;
+  }
+
+  /* Warning items — tighten left icon padding */
+  .disc-warning-item {
+    padding: 12px 12px 12px 44px;
+  }
+  .disc-warning-item::before {
+    font-size: 14px;
+    left: 12px;
+    top: 13px;
+  }
+
+  /* Contact cards */
+  .disc-contact-card,
+  .pay-contact-card,
+  .pp-contact-card,
+  .tc-contact-card,
+  .sc-contact-card {
+    padding: 18px 14px;
+  }
+
+  .disc-disclaimer-box,
+  .pay-methods-grid,
+  .sc-section-header {
+    padding: 18px 14px;
+    border-radius: 8px;
+  }
+
+  /* Payment method cards: stack 2 per row on small phones */
+  .pay-methods-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .pay-method-card {
+    padding: 16px 10px;
+  }
+
+  .pay-method-card i {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  /* Blog single post */
+  .single-post {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .blog_details h2 {
+    font-size: 1.4em;
+  }
+
+  .blog_details h3 {
+    font-size: 1.15em;
+    padding-left: 12px;
+  }
+
+  .quote-wrapper {
+    padding: 18px 16px;
+  }
+
+  .quotes {
+    font-size: 0.95em;
+    padding-left: 14px;
+  }
+
+  /* Benefits / Platform grids */
+  .benefits-grid,
+  .platform-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .benefit-card,
+  .platform-card {
+    padding: 18px;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: 40px 0;
+  }
+
+  .cta-section h3 {
+    font-size: 20px;
+  }
+
+  .cta-section p {
+    font-size: 15px;
+  }
+
+  .cta-buttons a {
+    display: block;
+    margin: 8px auto;
+    max-width: 240px;
+    text-align: center;
+    padding: 13px 24px;
+  }
+
+  /* Service cards */
+  .service-card {
+    padding: 20px 16px;
+  }
+
+  .service-image {
+    height: 160px;
+  }
+
+  /* Section title heading */
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  /* Slider */
+  .slide-content {
+    padding: 0 5% 80px;
+  }
+
+  /* Blog sidebar */
+  .blog_right_sidebar {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .single_sidebar_widget {
+    padding: 20px;
+  }
+}
