@@ -268,7 +268,7 @@
         <div class="row mt-5">
           <div class="col-lg-8 mx-auto">
             <div class="contact-form-wrapper">
-              <form class="contact_form" action="contact_process.php" method="post" id="contactForm">
+              <form id="contactForm">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -412,6 +412,42 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Stop normal form submission
+
+      // Get form values
+      var name = document.getElementById("name").value;
+      var mobile = document.getElementById("mobile").value;
+      var email = document.getElementById("email").value;
+      var business = document.getElementById("business").value;
+      var requirement = document.getElementById("requirement").value;
+      var project_type = document.getElementById("project_type").value;
+      var location = document.getElementById("location").value;
+      var message = document.getElementById("message").value;
+
+      // Create WhatsApp message
+      var whatsappMessage =
+          "New Enquiry - The PhD Ads\n\n" +
+          "Name: " + name + "\n" +
+          "Mobile: " + mobile + "\n" +
+          "Email: " + email + "\n" +
+          "Business: " + business + "\n" +
+          "Requirement: " + requirement + "\n" +
+          "Project Type: " + project_type + "\n" +
+          "Location: " + location + "\n" +
+          "Additional Details: " + message;
+
+      // Encode message
+      var encodedMessage = encodeURIComponent(whatsappMessage);
+
+      // WhatsApp number with country code
+      var phoneNumber = "919344723010";
+
+      // Redirect to WhatsApp
+      window.open("https://wa.me/" + phoneNumber + "?text=" + encodedMessage, "_blank");
+  });
+    </script>
 </body>
 
 </html>
