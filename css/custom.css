@@ -2137,6 +2137,8 @@
 
 /* Recent Posts */
 .post_item {
+    display: flex;
+    align-items: flex-start;
     padding: 15px 0;
     border-bottom: 1px solid var(--border-color);
     transition: all 0.3s ease;
@@ -2156,17 +2158,27 @@
 .post_item img {
     width: 80px;
     height: 80px;
+    min-width: 80px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.post_item .media-body {
+    flex: 1;
+    min-width: 0;
+    align-self: center;
 }
 
 .post_item h3 {
-    font-size: 0.95em;
+    font-size: 0.90em;
     margin-bottom: 5px;
     color: var(--text-primary);
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.45;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .post_item h3:hover {
@@ -2174,13 +2186,25 @@
 }
 
 .post_item p {
-    font-size: 0.85em;
+    font-size: 0.82em;
     color: var(--text-secondary);
     margin: 0;
 }
 
 .post_item a {
     text-decoration: none;
+}
+
+.post_item.active-post {
+    background: var(--bg-light);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.post_item.active-post h3 {
+    color: var(--primary-color);
 }
 
 /* Main Content Area */
