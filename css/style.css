@@ -622,7 +622,7 @@ ul {
   font-size: 14px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: #000000;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
@@ -637,7 +637,7 @@ ul {
   top: 11px;
   width: 40px;
   height: 1px;
-  background-color: #fff;
+  background-color: #000;
 }
 
 /* line 44, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_button.scss */
@@ -648,7 +648,7 @@ ul {
   top: 11px;
   width: 40px;
   height: 1px;
-  background-color: #fff;
+  background-color: #000;
 }
 
 /* line 53, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_button.scss */
