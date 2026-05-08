@@ -3,65 +3,81 @@ const POSTS = [
     img: "img/blog/professional-video-shoots-social-media-engagement.webp",
     alt: "Behind the Lens - Professional Video Shoots",
     href: "professional-video-shoots-social-media-engagement.html",
-    title: "Behind the Lens: How Professional Video Shoots Can 10X Your Social Media Engagement",
-    date: "May 2026"
+    title:
+      "Behind the Lens: How Professional Video Shoots Can 10X Your Social Media Engagement",
+    date: "May 2026",
   },
   {
     img: "img/blog/candid-vs-traditional-wedding-photography.webp",
     alt: "Candid Wedding Photography vs Traditional Shoots",
     href: "candid-vs-traditional-wedding-photography.html",
-    title: "Candid Wedding Photography vs. Traditional Shoots: Which Style Is Right for You?",
-    date: "May 2026"
+    title:
+      "Candid Wedding Photography vs. Traditional Shoots: Which Style Is Right for You?",
+    date: "May 2026",
   },
   {
     img: "img/blog/personal-branding-tips-2026.webp",
     alt: "5 Essential Personal Branding Tips in 2026",
     href: "personal-branding-tips-2026.html",
     title: "5 Essential Personal Branding Tips in 2026",
-    date: "May 2026"
+    date: "May 2026",
   },
   {
     img: "img/blog/local-ecommerce-product-photography-tamil-nadu.webp",
     alt: "Local E-commerce Product Photography Tamil Nadu",
     href: "local-ecommerce-product-photography-tamil-nadu.html",
-    title: "Local E-commerce Product Photography in Tamil Nadu: How Professional Product Shoots Help Online Brands Grow Faster",
-    date: "Feb 2026"
+    title:
+      "Local E-commerce Product Photography in Tamil Nadu: How Professional Product Shoots Help Online Brands Grow Faster",
+    date: "Feb 2026",
   },
   {
     img: "img/blog/social-media-content-creation-strategy.webp",
     alt: "Social Media Content Creation Strategy",
     href: "social-media-content-creation-strategy.html",
-    title: "Social Media Content Creation Strategy: Building Brand Consistency and Long-Term Digital Growth",
-    date: "Feb 2026"
+    title:
+      "Social Media Content Creation Strategy: Building Brand Consistency and Long-Term Digital Growth",
+    date: "Feb 2026",
   },
   {
     img: "img/blog/digital-advertising-creatives.webp",
     alt: "Digital Advertising Creatives",
     href: "digital-advertising-creatives.html",
-    title: "Digital Advertising Creatives: How Professional Photography &amp; Videography Improve ROI and Reduce Ad Costs",
-    date: "Feb 2026"
+    title:
+      "Digital Advertising Creatives: How Professional Photography &amp; Videography Improve ROI and Reduce Ad Costs",
+    date: "Feb 2026",
   },
   {
     img: "img/blog/professional-videography-for-brands.webp",
     alt: "Professional Videography for Brands",
     href: "professional-videography-for-brands.html",
-    title: "Professional Videography for Brands: How Video Content Builds Trust, Engagement, and Market Authority",
-    date: "Feb 2026"
+    title:
+      "Professional Videography for Brands: How Video Content Builds Trust, Engagement, and Market Authority",
+    date: "Feb 2026",
   },
   {
     img: "img/blog/product-photography-for-ecommerce.webp",
     alt: "Product Photography for E-commerce",
     href: "product-photography-for-ecommerce.html",
-    title: "Product Photography for E-commerce: A Complete Guide to Conversions, Trust, and Business Growth",
-    date: "Feb 2026"
+    title:
+      "Product Photography for E-commerce: A Complete Guide to Conversions, Trust, and Business Growth",
+    date: "Feb 2026",
   },
   {
     img: "img/blog/professional-photography-videography-for-brands.webp",
     alt: "Professional Photography & Videography for Brands",
     href: "professional-photography-videography-for-brands.html",
-    title: "Professional Photography &amp; Videography for Brands: A Complete Business &amp; Marketing Guide",
-    date: "Feb 2026"
-  }
+    title:
+      "Professional Photography &amp; Videography for Brands: A Complete Business &amp; Marketing Guide",
+    date: "Feb 2026",
+  },
+  {
+    img: "img/blog/professional-brand-photography-for-indian-startups.webp",
+    alt: "Professional Brand Photography for Indian Startups",
+    href: "professional-brand-photography-for-indian-startups.html",
+    title:
+      "Why Professional Brand Photography is the Secret to 5X More Sales for Indian Startups",
+    date: "May 2026",
+  },
 ];
 
 (function renderRecentPosts() {
@@ -71,20 +87,35 @@ const POSTS = [
   const currentPage = window.location.pathname.split("/").pop() || "";
   const visible = POSTS.slice(0, 6);
 
-  const html = visible.map(function (post) {
-    const isActive = post.href === currentPage;
-    return (
-      '<div class="media post_item' + (isActive ? " active-post" : "") + '">' +
-        '<img src="' + post.img + '" alt="' + post.alt + '" width="80" height="80" loading="lazy" />' +
+  const html = visible
+    .map(function (post) {
+      const isActive = post.href === currentPage;
+      return (
+        '<div class="media post_item' +
+        (isActive ? " active-post" : "") +
+        '">' +
+        '<img src="' +
+        post.img +
+        '" alt="' +
+        post.alt +
+        '" width="80" height="80" loading="lazy" />' +
         '<div class="media-body">' +
-          '<a href="' + post.href + '">' +
-            '<h3>' + post.title + '</h3>' +
-            '<p>' + post.date + '</p>' +
-          '</a>' +
-        '</div>' +
-      '</div>'
-    );
-  }).join("\n");
+        '<a href="' +
+        post.href +
+        '">' +
+        "<h3>" +
+        post.title +
+        "</h3>" +
+        "<p>" +
+        post.date +
+        "</p>" +
+        "</a>" +
+        "</div>" +
+        "</div>"
+      );
+    })
+    .join("\n");
 
-  container.innerHTML = '<h3 class="widget_title">Recent Posts</h3>' + "\n" + html;
+  container.innerHTML =
+    '<h3 class="widget_title">Recent Posts</h3>' + "\n" + html;
 })();
