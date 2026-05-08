@@ -78,6 +78,13 @@ const POSTS = [
       "Why Professional Brand Photography is the Secret to 5X More Sales for Indian Startups",
     date: "May 2026",
   },
+  {
+  img: "img/blog/digital-ad-video-production-lower-cac.webp",
+  alt: "Digital Ad Video Production Lower CAC",
+  href: "digital-ad-video-production-lower-cac.html",
+  title: "Mastering Digital Ads: How Video Production Can Lower Your Customer Acquisition Cost (CAC)",
+  date: "May 2026"
+},
 ];
 
 (function renderRecentPosts() {
