@@ -799,103 +799,206 @@ ul {
 
 
 
-/**************menu part start*****************/
-/* line 3, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.main_menu .navbar-brand {
-  padding-top: 0rem;
-  padding-bottom: 0px;
+/* ─────────────────────────────────────
+   GLASS NAVBAR
+───────────────────────────────────── */
+/* ─────────────────────────────────────
+   FIXED GLASS NAVBAR
+───────────────────────────────────── */
+
+.main_menu {
+  position: fixed;
+  top: 16px;
+  left: 24px;
+  right: 24px;
+
+  width: auto;
+  max-width: 1320px;
+
+  margin: 0 auto;
+
+  z-index: 9999;
+
+  border-radius: 22px;
+
+  background:  rgba(255, 255, 255, 0.314);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.14);
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    top 0.3s ease;
 }
 
-/* line 8, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
+/* navbar inner */
 .main_menu .navbar {
-  padding: 0px;
+  padding: 10px 18px;
 }
 
-/* line 12, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.main_menu .main-menu-item {
-  justify-content: flex-end;
+/* scroll state */
+.menu_fixed {
+  position: fixed;
+
+  top: 12px;
+  left: 24px;
+  right: 24px;
+
+  margin: 0 auto;
+
+  background: rgba(15,15,15,0.58);
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
-/* line 16, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.main_menu .main-menu-item ul li .nav-link {
-  color: #c6c6c6;
-  font-size: 14px;
-  padding: 39px 23px;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  line-height: 12px;
-  font-weight: 500;
-}
+/* mobile */
+@media (max-width: 991px) {
 
-/* line 25, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.main_menu .main-menu-item ul li .nav-link:hover {
-  color: #ffffff;
-}
+  .main_menu,
+  .menu_fixed {
+    left: 10px;
+    right: 10px;
+    top: 10px;
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-
-  /* line 16, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-  .main_menu .main-menu-item ul li .nav-link {
-    padding: 35px 20px;
+    border-radius: 18px;
   }
 }
 
-/* line 36, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.main_menu .active_color {
-  color: #282828 !important;
+/* logo */
+.main_menu .navbar-brand img {
+  max-height: 54px;
 }
 
-/* line 41, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.cart {
-  margin-left: 20px;
+/* nav alignment */
+.main_menu .main-menu-item {
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/* line 44, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.cart .dropdown-toggle::after {
-  display: inline-block;
-  margin-left: .255em;
-  vertical-align: .255em;
-  content: "";
-  border: 0px solid transparent;
-}
-
-/* line 52, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.cart i {
-  color: #1e2528;
+/* nav links */
+.main_menu .main-menu-item ul li .nav-link {
   position: relative;
-  z-index: 1;
-  font-size: 15px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  padding: 18px 20px;
+
+  font-family: "Work Sans", sans-serif;
+
+  transition:
+    color 0.25s ease,
+    opacity 0.25s ease;
 }
 
-.main_menu.home_menu {
-  background: #53074d;
-  /* light orange / peach */
+/* hover */
+.main_menu .main-menu-item ul li .nav-link:hover {
+  color: #ff4800;
 }
 
-/* line 60, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.menu_fixed {
-  position: fixed;
-  z-index: 9999 !important;
-  width: 100%;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
-  top: 0;
-  background-color: #53074d;
-}
-
-/* line 68, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.menu_fixed .nav-link {
-  color: #fff !important;
-}
-
-/* line 72, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
-.menu_fixed .active_color {
+/* active */
+.main_menu .active_color {
   color: #ff4800 !important;
 }
 
-/* line 76, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
+/* subtle underline */
+.main_menu .main-menu-item ul li .nav-link::after {
+  content: "";
+
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+
+  width: 0%;
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: #ff4800;
+
+  transition: width 0.3s ease;
+}
+
+.main_menu .main-menu-item ul li .nav-link:hover::after {
+  width: calc(100% - 40px);
+}
+
+
+
+/* nav links after scroll */
+.menu_fixed .nav-link {
+  color: #ffffff !important;
+}
+
+.menu_fixed .nav-link:hover {
+  color: #ff4800 !important;
+}
+
+/* icons */
+.cart i,
 .menu_fixed i {
   color: #fff !important;
 }
+
+/* mobile toggle */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* mobile menu glass */
+@media (max-width: 991px) {
+
+  .main_menu {
+    width: calc(100% - 20px);
+    top: 10px;
+    border-radius: 18px;
+  }
+
+  .main_menu .navbar {
+    padding: 12px 14px;
+  }
+
+  .main_menu .navbar-collapse {
+    margin-top: 12px;
+
+    border-radius: 18px;
+
+    background: rgba(20,20,20,0.72);
+
+    backdrop-filter: blur(18px);
+
+    padding: 14px;
+  }
+
+  .main_menu .main-menu-item ul li .nav-link {
+    padding: 16px 10px;
+    font-size: 13px;
+  }
+}
+
+
 
 /* line 82, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
 .dropdown .dropdown-menu {

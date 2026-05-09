@@ -1,0 +1,461 @@
+      /* ── ABOUT-PAGE COLOR PALETTE ── */
+      :root {
+        --primary-color: #ff4800;
+        --primary-dark: #cc3900;
+        --primary-light: #ff6a33;
+        --accent-color: #ff8c66;
+        --text-dark: #2c3e50;
+        --text-light: #6c757d;
+        --bg-light: #f8f9fa;
+        --bg-pale: #fff5f2;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        background: var(--white);
+        color: var(--text-dark);
+      }
+
+      /* ─────────────────────────────────────
+           BREADCRUMB  (matches about.html style)
+        ───────────────────────────────────── */
+      .portfolio-breadcrumb {
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .portfolio-breadcrumb img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .portfolio-breadcrumb .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+      }
+      .portfolio-breadcrumb .breadcrumb-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+      .portfolio-breadcrumb h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .portfolio-breadcrumb h2 span {
+        color: var(--primary-color);
+      }
+      .portfolio-breadcrumb .orange-line {
+        width: 60px;
+        height: 4px;
+        background: var(--primary-color);
+        border-radius: 2px;
+        margin: 0 auto;
+      }
+
+      /* ─────────────────────────────────────
+           SECTION TITLE  (same as about page)
+        ───────────────────────────────────── */
+      .section-title {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 50px;
+      }
+      .section-title .subtitle {
+        color: var(--primary-color);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .section-title h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 0;
+        line-height: 1.25;
+        position: relative;
+        display: inline-block;
+      }
+      .section-title h2::after {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background: var(--primary-color);
+        border-radius: 2px;
+      }
+
+      /* ─────────────────────────────────────
+           PORTFOLIO SECTION WRAPPER
+        ───────────────────────────────────── */
+      .portfolio-section {
+        background: var(--bg-light);
+        padding: 80px 0 100px;
+      }
+      .portfolio-section .container {
+        max-width: 1200px;
+      }
+
+      /* ─────────────────────────────────────
+           FILTER TABS  (about-page button style)
+        ───────────────────────────────────── */
+      .filter-tabs-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 55px;
+        padding-top: 20px;
+      }
+      .filter-tab {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 22px;
+        border-radius: 50px;
+        font-family: "Work Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 2px solid #dee2e6;
+        background: var(--white);
+        color: var(--text-light);
+        transition: all 0.3s ease;
+        white-space: nowrap;
+      }
+      .filter-tab:hover {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+        background: var(--bg-pale);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(255, 72, 0, 0.12);
+      }
+      .filter-tab.active {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+        color: #fff;
+        box-shadow: 0 6px 20px rgba(255, 72, 0, 0.3);
+        transform: translateY(-2px);
+      }
+      .filter-tab .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: currentColor;
+        opacity: 0.7;
+        flex-shrink: 0;
+      }
+      .filter-tab.active .dot {
+        opacity: 1;
+      }
+
+      /* ─────────────────────────────────────
+           SHORTS GRID
+        ───────────────────────────────────── */
+      .shorts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 24px;
+      }
+
+      /* ─────────────────────────────────────
+           SHORTS CARD  (about-page card style)
+        ───────────────────────────────────── */
+      .short-card {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 9/16;
+        background: #e9ecef;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.4s ease;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        animation: phdFadeUp 0.5s ease both;
+      }
+      .short-card:hover {
+        transform: translateY(-8px);
+        border-color: var(--primary-color);
+        box-shadow: 0 15px 40px rgba(255, 72, 0, 0.2);
+      }
+
+      @keyframes phdFadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .short-card:nth-child(1) {
+        animation-delay: 0.04s;
+      }
+      .short-card:nth-child(2) {
+        animation-delay: 0.08s;
+      }
+      .short-card:nth-child(3) {
+        animation-delay: 0.12s;
+      }
+      .short-card:nth-child(4) {
+        animation-delay: 0.16s;
+      }
+      .short-card:nth-child(5) {
+        animation-delay: 0.2s;
+      }
+      .short-card:nth-child(6) {
+        animation-delay: 0.24s;
+      }
+      .short-card:nth-child(7) {
+        animation-delay: 0.28s;
+      }
+      .short-card:nth-child(8) {
+        animation-delay: 0.32s;
+      }
+      .short-card:nth-child(9) {
+        animation-delay: 0.36s;
+      }
+
+      /* iframe embed */
+      .short-card .video-wrap {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+      .short-card .video-wrap iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+      }
+
+      /* category badge — orange pill (about-page service-tag style) */
+      .short-card .cat-badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 4;
+        background: var(--primary-color);
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgba(255, 72, 0, 0.35);
+      }
+
+      /* bottom gradient + label */
+      .short-card .card-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 50px 14px 14px;
+        background: linear-gradient(
+          to top,
+          rgba(44, 62, 80, 0.92) 0%,
+          transparent 100%
+        );
+        pointer-events: none;
+      }
+      .card-label .client-name {
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 3px;
+      }
+      .card-label .video-title {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 1.35;
+      }
+
+      /* watch on youtube button */
+      .short-card .open-btn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 11;
+        opacity: 0;
+        transition:
+          opacity 0.25s ease,
+          transform 0.25s ease;
+        background: var(--white);
+        border: 2px solid var(--primary-color);
+        border-radius: 20px;
+        color: var(--primary-color);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 5px 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        box-shadow: 0 3px 10px rgba(255, 72, 0, 0.2);
+      }
+      .short-card:hover .open-btn {
+        opacity: 1;
+        transform: translateY(2px);
+      }
+      .open-btn:hover {
+        background: var(--primary-color);
+        color: #fff !important;
+      }
+      .open-btn svg {
+        width: 10px;
+        height: 10px;
+        fill: currentColor;
+      }
+
+      /* click overlay */
+      .short-card .click-open {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        cursor: pointer;
+      }
+
+      /* empty state */
+      .empty-state {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      .empty-state p {
+        color: var(--text-light);
+        font-size: 16px;
+      }
+
+      /* ─────────────────────────────────────
+           STATS SECTION  (matches about page)
+        ───────────────────────────────────── */
+      .stats-section {
+        background: var(--primary-color);
+        padding: 60px 0;
+        color: #fff;
+      }
+      .stat-box {
+        text-align: center;
+        padding: 20px;
+      }
+      .stat-box .stat-number {
+        font-family: "Oswald", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 1;
+      }
+      .stat-box .stat-label {
+        font-size: 14px;
+        opacity: 0.92;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+      }
+
+      /* ─────────────────────────────────────
+           CTA SECTION  (matches about page)
+        ───────────────────────────────────── */
+      .cta-section {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--primary-dark)
+        );
+        padding: 80px 0;
+        text-align: center;
+        color: #fff;
+      }
+      .cta-section h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+      .cta-section p {
+        font-size: 17px;
+        opacity: 0.92;
+        margin-bottom: 30px;
+        line-height: 1.7;
+      }
+      .btn-primary-custom {
+        display: inline-block;
+        background: #fff;
+        color: var(--primary-color);
+        padding: 15px 45px;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 50px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .btn-primary-custom:hover {
+        background: var(--text-dark);
+        color: #fff !important;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+      }
+
+      /* ─────────────────────────────────────
+           RESPONSIVE
+        ───────────────────────────────────── */
+      @media (max-width: 768px) {
+        .shorts-grid {
+          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+          gap: 16px;
+        }
+        .filter-tab {
+          font-size: 12px;
+          padding: 8px 16px;
+        }
+      }
+      @media (max-width: 480px) {
+        .shorts-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+        .filter-tab {
+          font-size: 11px;
+          padding: 7px 13px;
+        }
+      }

@@ -61,23 +61,7 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
     <div class="phd-bg-orb phd-orb-3"></div>
   </div>
 
-  <!-- Text -->
-  <div class="phd-hero-content">
-    <span class="phd-hero-tag">Professional Photography &amp; Videography Solutions</span>
-    <h1 class="phd-hero-title">
-      Where Creativity<br>
-      <em class="phd-hero-accent">Meets Camera</em>
-    </h1>
-    <p class="phd-hero-desc">
-      We are a full-service photography and videography studio delivering
-      strategic visual content for brands, businesses, and digital platforms.
-    </p>
-    <div class="about_us_text text-center">                        
-                        <a href="services.html" class="btn_1">View Services</a>
-                    </div>
-  </div>
-
-  <!-- Fan Cards -->
+  <!-- Fan Cards FIRST (top) -->
   <div class="phd-fan-stage" id="phdFanStage">
     <div class="phd-fan-card" data-index="0">
       <div class="phd-card-img-wrap"><img src="img/gallery/6-productshot.webp" alt="Product Photography"></div>
@@ -107,13 +91,36 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
       <div class="phd-card-img-wrap"><img src="img/gallery/1-Streetphoto.webp" alt="Street Photography"></div>
       <div class="phd-card-gloss"></div>
     </div>
+
+    <!-- WhatsApp Button overlaying the cards -->
+    <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener" class="phd-wa-overlay-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span>Chat with Us</span>
+    </a>
+  </div>
+
+  <!-- Gap between cards and text -->
+  <div class="phd-hero-gap"></div>
+
+  <!-- Text BELOW the cards -->
+  <div class="phd-hero-content">
+    <h1 class="phd-hero-title">
+      Where Creativity<br>
+      <em class="phd-hero-accent">Meets Camera</em>
+    </h1>
+    <p class="phd-hero-desc">
+      We are a full-service photography and videography studio delivering
+      strategic visual content for brands, businesses, and digital platforms.
+    </p>
+    <div class="about_us_text text-center">
+      <a href="services.html" class="btn_1">View Services</a>
+    </div>
   </div>
 
 </section>
 <!--::banner part end::-->
-
-
-
 
 
 
@@ -173,7 +180,7 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
       card.style.transform  = t;
       card.style.zIndex     = s.z;
       card.style.left       = '50%';
-      card.style.bottom     = '-120px';
+      card.style.bottom = '-40px';
       card.style.opacity    = inView ? '1' : '0';
       card.style.pointerEvents = inView ? '' : 'none';
 
@@ -236,12 +243,13 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
 
 
     <!--::about_us part start::-->
-    <section class="about_us padding_top padding_bottom">
+    <section class="about_us padding_bottom">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-10">
                 <div class="section-title text-center">
                     <div class="hero-intro-content">
+                        <h1>About Us</h1>
                         <span class="subtitle">Photography & Videography as Marketing Assets</span>
                         <h2>Our Approach to the Industry</h2><br><br>
                         <p>
@@ -266,6 +274,7 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
     <!-- PORTFOLIO SECTION -->
 <section class="port-section">
   <div style="max-width:1140px;margin:0 auto;padding:0 20px">
+    
     <div class="port-header">
       <span class="port-subtitle">Work We're Proud Of</span>
       <h2 class="port-title">Our Portfolio</h2>
@@ -273,51 +282,98 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
 
     <div class="port-grid">
 
+      <!-- VINAYAGAM HOSPITAL -->
       <div class="port-card">
-        <iframe src="https://www.youtube.com/embed/8trRHTY-fP8?autoplay=1&mute=1&loop=1&playlist=8trRHTY-fP8&playsinline=1&controls=0&rel=0&modestbranding=1" loading="lazy" title="Law Brand Promo Film"></iframe>
-        <div class="cat-pill">Law</div>
-        <div class="card-foot">
-          <div class="client">Law</div>
-          <div class="vtitle">Brand Promo Film</div>
-        </div>
-        <div class="click-layer" onclick="window.open('https://youtube.com/shorts/8trRHTY-fP8','_blank','noopener')"></div>
-      </div>
+        <iframe
+          src="https://www.youtube.com/embed/rsuX6nOZNSQ?autoplay=1&mute=1&loop=1&playlist=rsuX6nOZNSQ&playsinline=1&controls=0&rel=0&modestbranding=1"
+          loading="lazy"
+          title="Vinayagam Hospital">
+        </iframe>
 
-      <div class="port-card">
-        <iframe src="https://www.youtube.com/embed/25Hx67vAMhA?autoplay=1&mute=1&loop=1&playlist=25Hx67vAMhA&playsinline=1&controls=0&rel=0&modestbranding=1" loading="lazy" title="School Campaign"></iframe>
-        <div class="cat-pill">School</div>
-        <div class="card-foot">
-          <div class="client">School</div>
-          <div class="vtitle">School Campaign</div>
-        </div>
-        <div class="click-layer" onclick="window.open('https://youtube.com/shorts/25Hx67vAMhA','_blank','noopener')"></div>
-      </div>
+        <div class="cat-pill">Vinayagam Hospital</div>
 
-      <div class="port-card">
-        <iframe src="https://www.youtube.com/embed/snR2vx3exMw?autoplay=1&mute=1&loop=1&playlist=snR2vx3exMw&playsinline=1&controls=0&rel=0&modestbranding=1" loading="lazy" title="Prana Arc Product Reel"></iframe>
-        <div class="cat-pill">Prana Arc</div>
         <div class="card-foot">
-          <div class="client">Prana Arc</div>
-          <div class="vtitle">Product Reel</div>
-        </div>
-        <div class="click-layer" onclick="window.open('https://youtube.com/shorts/snR2vx3exMw','_blank','noopener')"></div>
-      </div>
-
-      <div class="port-card">
-        <iframe src="https://www.youtube.com/embed/7EKQ8g3jrU8?autoplay=1&mute=1&loop=1&playlist=7EKQ8g3jrU8&playsinline=1&controls=0&rel=0&modestbranding=1" loading="lazy" title="Gani Hospitals Brand Film"></iframe>
-        <div class="cat-pill">Gani Hospitals</div>
-        <div class="card-foot">
-          <div class="client">Gani Hospitals</div>
+          <div class="client">Vinayagam Hospital</div>
           <div class="vtitle">Hospital Brand Film</div>
         </div>
-        <div class="click-layer" onclick="window.open('https://youtube.com/shorts/7EKQ8g3jrU8','_blank','noopener')"></div>
+
+        <div
+          class="click-layer"
+          onclick="window.open('https://youtube.com/shorts/rsuX6nOZNSQ','_blank','noopener')">
+        </div>
+      </div>
+
+      <!-- AI VIDEO -->
+      <div class="port-card">
+        <iframe
+          src="https://www.youtube.com/embed/CkNNEWSHAzo?autoplay=1&mute=1&loop=1&playlist=CkNNEWSHAzo&playsinline=1&controls=0&rel=0&modestbranding=1"
+          loading="lazy"
+          title="AI Video">
+        </iframe>
+
+        <div class="cat-pill">AI Video</div>
+
+        <div class="card-foot">
+          <div class="client">AI Video</div>
+          <div class="vtitle">AI Generated Reel</div>
+        </div>
+
+        <div
+          class="click-layer"
+          onclick="window.open('https://youtube.com/shorts/CkNNEWSHAzo','_blank','noopener')">
+        </div>
+      </div>
+
+      <!-- GANI HOSPITAL -->
+      <div class="port-card">
+        <iframe
+          src="https://www.youtube.com/embed/SZ9HWNpvuq0?autoplay=1&mute=1&loop=1&playlist=SZ9HWNpvuq0&playsinline=1&controls=0&rel=0&modestbranding=1"
+          loading="lazy"
+          title="Gani Hospital">
+        </iframe>
+
+        <div class="cat-pill">Gani Hospital</div>
+
+        <div class="card-foot">
+          <div class="client">Gani Hospital</div>
+          <div class="vtitle">Hospital Campaign</div>
+        </div>
+
+        <div
+          class="click-layer"
+          onclick="window.open('https://youtube.com/shorts/SZ9HWNpvuq0','_blank','noopener')">
+        </div>
+      </div>
+
+      <!-- MEERA SCANS -->
+      <div class="port-card">
+        <iframe
+          src="https://www.youtube.com/embed/RFyxbq0ocRo?autoplay=1&mute=1&loop=1&playlist=RFyxbq0ocRo&playsinline=1&controls=0&rel=0&modestbranding=1"
+          loading="lazy"
+          title="Meera Scans">
+        </iframe>
+
+        <div class="cat-pill">Meera Scans</div>
+
+        <div class="card-foot">
+          <div class="client">Meera Scans</div>
+          <div class="vtitle">Clinic Promo</div>
+        </div>
+
+        <div
+          class="click-layer"
+          onclick="window.open('https://youtube.com/shorts/RFyxbq0ocRo','_blank','noopener')">
+        </div>
       </div>
 
     </div>
 
     <div class="port-cta-wrap">
-      <a href="portfolio.html" class="port-view-btn">View Full Portfolio →</a>
+      <a href="portfolio.html" class="port-view-btn">
+        View Full Portfolio →
+      </a>
     </div>
+
   </div>
 </section>
 
@@ -332,7 +388,7 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
 
                 <!-- Center (main/large) -->
                 <div class="photo_bubble photo_center">
-                    <img src="img/team/photographer-1.webp" alt="Lead Photographer">
+                    <img src="img/team/photographer-4.webp" alt="Lead Photographer">
                 </div>
 
                 <!-- Top Left -->
@@ -347,7 +403,7 @@ src="https://www.facebook.com/tr?id=1446183610533327&ev=PageView&noscript=1"
 
                 <!-- Bottom Left -->
                 <div class="photo_bubble photo_bl">
-                    <img src="img/team/photographer-4.webp" alt="Photographer">
+                    <img src="img/team/photographer-1.webp" alt="Photographer">
                 </div>
 
                 <!-- Bottom Right -->
