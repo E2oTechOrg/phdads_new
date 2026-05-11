@@ -821,16 +821,16 @@ ul {
 
   border-radius: 22px;
 
-  background:  rgba(255, 255, 255, 0.314);
+  background: rgba(255, 255, 255, 0.314);
 
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 
   box-shadow:
-    0 8px 32px rgba(0,0,0,0.08),
-    inset 0 1px 0 rgba(255,255,255,0.12);
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
 
   transition:
     background 0.3s ease,
@@ -854,16 +854,18 @@ ul {
 
   margin: 0 auto;
 
-  background: rgba(15,15,15,0.58);
+  background: linear-gradient(
+      rgba(244, 90, 29, 0.619)50%
+    );
 
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
 
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   box-shadow:
-    0 12px 40px rgba(0,0,0,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.08);
+    0 12px 40px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 /* mobile */
@@ -985,7 +987,7 @@ ul {
 
     border-radius: 18px;
 
-    background: rgba(20,20,20,0.72);
+    background: rgba(20, 20, 20, 0.72);
 
     backdrop-filter: blur(18px);
 
@@ -1042,17 +1044,19 @@ ul {
   /* line 120, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
   .main_menu .main-menu-item {
     text-align: left !important;
+
   }
 
   /* line 123, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item {
     padding: 10px 15px !important;
+    background: (255, 255, 255, 0.314);
   }
 
   /* line 126, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item .nav-link {
     padding: 5px 15px !important;
-    color: #000;
+    color: #fff;
   }
 
   /* line 133, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
@@ -1112,7 +1116,7 @@ ul {
 
   /* line 188, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_menu.scss */
   .menu_icon i {
-    color: #182028;
+    color: #fff;
   }
 }
 
