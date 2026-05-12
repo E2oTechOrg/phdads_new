@@ -6430,17 +6430,115 @@ html {
 }
 
 
-/* Fan Stage heights */
-.phd-fan-stage { height: 520px; margin-top: -80px; }
-@media (max-width: 1100px) { .phd-fan-stage { height: 440px; margin-top: -60px; } }
-@media (max-width: 768px)  { .phd-fan-stage { height: 320px; margin-top: 20px; } .phd-hero-gap { height: 50px; } }
-@media (max-width: 480px)  { .phd-fan-stage { height: 260px; margin-top: 10px; } .phd-hero-gap { height: 30px; } }
+/* ── MOBILE FAN CARDS — PERFECT SIZE ── */
+@media (max-width: 768px) {
+    .phd-hero-section {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
 
-/* Fan Card sizes */
-.phd-fan-card { width: 280px; height: 400px; border-radius: 28px; }
-@media (max-width: 1100px) { .phd-fan-card { width: 210px; height: 300px; border-radius: 22px; } }
-@media (max-width: 768px)  { .phd-fan-card { width: 150px; height: 215px; border-radius: 18px; } }
-@media (max-width: 480px)  { .phd-fan-card { width: 115px; height: 165px; border-radius: 14px; } }
+    .phd-fan-stage {
+        height: 55vh;
+        margin-top: 30px;
+    }
+
+    .phd-fan-card {
+        width: 38vw;
+        height: 52vh;
+        border-radius: 20px;
+    }
+
+    .phd-fan-card::after,
+    .phd-card-gloss {
+        border-radius: 20px;
+    }
+
+    .phd-hero-gap {
+        height: 20px;
+    }
+
+    .phd-wa-overlay-btn {
+        bottom: -22px;
+        font-size: 12px;
+        padding: 8px 16px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phd-hero-section {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .phd-fan-stage {
+        height: 52vh;
+        margin-top: 35px;
+    }
+
+    .phd-fan-card {
+        width: 60vw;
+        height: 45vh;
+        border-radius: 18px;
+    }
+
+    .phd-fan-card::after,
+    .phd-card-gloss {
+        border-radius: 18px;
+    }
+
+    .phd-hero-gap {
+        height: 15px;
+    }
+
+    .phd-wa-overlay-btn {
+        bottom: -20px;
+        font-size: 11px;
+        padding: 7px 13px;
+        gap: 7px;
+    }
+
+    .phd-wa-overlay-btn svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .phd-hero-title {
+        margin-top: 40px;
+    }
+
+    .phd-hero-desc {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 360px) {
+    .phd-fan-stage {
+        height: 48vh;
+        margin-top: 30px;
+    }
+
+    .phd-fan-card {
+        width: 42vw;
+        height: 46vh;
+        border-radius: 16px;
+    }
+
+    .phd-fan-card::after,
+    .phd-card-gloss {
+        border-radius: 16px;
+    }
+
+    .phd-hero-gap {
+        height: 12px;
+    }
+
+    .phd-hero-title {
+        margin-top: 35px;
+        font-size: 32px;
+    }
+}
 
 /* Hero section padding */
 @media (max-width: 480px)  { .phd-hero-section { padding-top: 50px; padding-bottom: 40px; margin-bottom: 60px; } }
