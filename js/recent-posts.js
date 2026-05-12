@@ -1,5 +1,19 @@
 const POSTS = [
   {
+  img: "img/blog/best-wedding-photographers-near-me-affordable-packages.webp",
+  alt: "Best Wedding Photographers Near Me - Affordable Packages in Madurai",
+  href: "best-wedding-photographers-near-me-affordable-packages.html",
+  title: "How to Find the Best Wedding Photographers Near Me with an Affordable Photographer and Videographer Package",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/ecommerce-product-catalog-photography-checklist.webp",
+  alt: "E-commerce Product Catalog Photography Checklist",
+  href: "ecommerce-product-catalog-photography-checklist.html",
+  title: "The Ultimate E-commerce Checklist: Driving Traffic with Professional Product Catalog Shoots",
+  date: "May 2026"
+},
+  {
     img: "img/blog/professional-video-shoots-social-media-engagement.webp",
     alt: "Behind the Lens - Professional Video Shoots",
     href: "professional-video-shoots-social-media-engagement.html",
