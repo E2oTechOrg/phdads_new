@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/founder-led-content-strategy-indian-startups-2026.webp",
+  alt: "Founder-Led Content Strategy for Indian Startups 2026",
+  href: "founder-led-content-strategy-indian-startups-2026.html",
+  title: "Why Founder-Led Content is the Highest ROI Strategy for Indian Startups in 2026",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/trending-wedding-poses-engagement-photographer-session.webp",
+  alt: "Trending Wedding Poses from Top Wedding Photographers - Engagement Session Guide",
+  href: "trending-wedding-poses-engagement-photographer-session.html",
+  title: "Trending Poses from Top Wedding Photographers: Making the Most of Your Engagement Photographers Session",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/combined-videographer-photographer-package-marriage-photography.webp",
+  alt: "Combined Videographer and Photographer Package for Marriage Photography",
+  href: "combined-videographer-photographer-package-marriage-photography.html",
+  title: "Why You Need a Combined Videographer and Photographer Package for the Best Marriage Photography Experience",
+  date: "May 2026"
+},
+  {
   img: "img/blog/best-wedding-photographers-near-me-affordable-packages.webp",
   alt: "Best Wedding Photographers Near Me - Affordable Packages in Madurai",
   href: "best-wedding-photographers-near-me-affordable-packages.html",
