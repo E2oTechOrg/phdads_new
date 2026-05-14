@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/high-impact-digital-ads-social-trends-rapid-production.webp",
+  alt: "Creating High-Impact Digital Ads at the Speed of Social Trends",
+  href: "high-impact-digital-ads-social-trends-rapid-production.html",
+  title: "Creating High-Impact Digital Ads at the Speed of Social Trends",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/short-form-video-seo-google-social-search.webp",
+  alt: "Short-Form Video SEO for Google and Social Search",
+  href: "short-form-video-seo-google-social-search.html",
+  title: "Beyond the Feed: How to Optimize Your Short-Form Video for Google and Social Search",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/360-degree-product-photography-shopify-ecommerce.webp",
+  alt: "360-Degree Product Photography for Shopify and E-commerce Brands",
+  href: "360-degree-product-photography-shopify-ecommerce.html",
+  title: "360-Degree Product Photography: Reducing Returns and Boosting Trust for Shopify Brands",
+  date: "May 2026"
+},
+  {
   img: "img/blog/founder-led-content-strategy-indian-startups-2026.webp",
   alt: "Founder-Led Content Strategy for Indian Startups 2026",
   href: "founder-led-content-strategy-indian-startups-2026.html",
