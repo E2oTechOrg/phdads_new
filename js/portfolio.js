@@ -7,9 +7,17 @@ const videos = [
   {
     cat: "vinayagam-hospital",
     client: "Vinayagam Hospital",
-    title: "Hospital Brand Film",
+    title: "Hospital Brand Film I",
     ytId: "rsuX6nOZNSQ",
     url: "https://youtube.com/shorts/rsuX6nOZNSQ?feature=share",
+    short: true,
+  },
+  {
+    cat: "vinayagam-hospital",
+    client: "Vinayagam Hospital",
+    title: "Hospital Brand Film II",
+    ytId: "qgEz_HL23MM",
+    url: "https://youtube.com/shorts/qgEz_HL23MM?feature=share",
     short: true,
   },
 
@@ -80,6 +88,22 @@ const videos = [
     url: "https://youtube.com/shorts/305gBARN32Q?feature=share",
     short: true,
   },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video VI",
+    ytId: "ROdwa-q1tos",
+    url: "https://youtube.com/shorts/ROdwa-q1tos?feature=share",
+    short: true,
+  },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video VII",
+    ytId: "BKGqozHISCg",
+    url: "https://youtube.com/shorts/BKGqozHISCg?feature=share",
+    short: true,
+  },
 
   // MEERA SCANS
   {
@@ -112,6 +136,14 @@ const videos = [
     title: "Clinic Promo IV",
     ytId: "fycWBtBhKh8",
     url: "https://youtube.com/shorts/fycWBtBhKh8?feature=share",
+    short: true,
+  },
+  {
+    cat: "meera-scans",
+    client: "Meera Scans",
+    title: "Clinic Promo V",
+    ytId: "R767WYmLm5Y",
+    url: "https://youtube.com/shorts/R767WYmLm5Y?feature=share",
     short: true,
   },
 
@@ -374,6 +406,22 @@ const videos = [
     title: "School Video XVIII",
     ytId: "fUhCOax2ec8",
     url: "https://youtube.com/shorts/fUhCOax2ec8?feature=share",
+    short: true,
+  },
+  {
+    cat: "school",
+    client: "School",
+    title: "School Video XIX",
+    ytId: "NUwn8laD9rA",
+    url: "https://youtube.com/shorts/NUwn8laD9rA?feature=share",
+    short: true,
+  },
+  {
+    cat: "school",
+    client: "School",
+    title: "School Video XX",
+    ytId: "fgbjzSARHbo",
+    url: "https://youtube.com/shorts/fgbjzSARHbo?feature=share",
     short: true,
   },
 
