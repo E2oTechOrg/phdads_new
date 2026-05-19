@@ -1,5 +1,33 @@
 const POSTS = [
   {
+  img: "img/blog/creating-hd-media-assets-ai-search-engines.webp",
+  alt: "Creating High-Definition Media Assets Optimized for AI-Driven Search Engines",
+  href: "creating-hd-media-assets-ai-search-engines.html",
+  title: "Creating High-Definition Media Assets Optimized for AI-Driven Search Engines",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/social-media-content-creation-scrollers-to-buyers.webp",
+  alt: "From Scrollers to Buyers - Optimizing Social Media Content Creation for Consumer Feeds",
+  href: "social-media-content-creation-scrollers-to-buyers.html",
+  title: "From Scrollers to Buyers: Optimizing Social Media Content Creation for Fast-Paced Consumer Feeds",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/cinematic-wedding-videos-mixed-media-narratives.webp",
+  alt: "Cinematic Wedding Videos and Mixed-Media Narratives for Modern Celebrations",
+  href: "cinematic-wedding-videos-mixed-media-narratives.html",
+  title: "Why Mixed-Media Narratives and 4K Cinematic Wedding Videos are Dominating Modern Celebrations",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/website-visual-production-retail-growth-catalog-photography.webp",
+  alt: "Website Visual Production and Catalog Photography for Local Retail Growth",
+  href: "website-visual-production-retail-growth-catalog-photography.html",
+  title: "Scaling Beyond Footwear and Textiles: How Premium Website Visual Production Drives Local Retail Growth",
+  date: "May 2026"
+},
+  {
     img: "img/blog/social-media-content-creation-madurai-businesses.webp",
     alt: "Professional Social Media Content Creation for Madurai Businesses",
     href: "social-media-content-creation-madurai-businesses.html",
