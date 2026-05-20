@@ -1,5 +1,19 @@
 const POSTS = [
   {
+  img: "img/blog/cinematic-videos-premium-packaging-local-brands.webp",
+  alt: "Using Cinematic Videos to Launch Premium Packaging for Local D2C Brands",
+  href: "cinematic-videos-premium-packaging-local-brands.html",
+  title: "Using Cinematic Videos to Launch Premium Packaging for Local Brands",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/high-definition-product-photos-abandoned-carts-ecommerce.webp",
+  alt: "How High-Definition Close-Up Product Photos Save Abandoned Carts in E-commerce",
+  href: "high-definition-product-photos-abandoned-carts-ecommerce.html",
+  title: "How High-Definition Close-Up Product Photos Save Abandoned Carts",
+  date: "May 2026"
+},
+  {
   img: "img/blog/creating-hd-media-assets-ai-search-engines.webp",
   alt: "Creating High-Definition Media Assets Optimized for AI-Driven Search Engines",
   href: "creating-hd-media-assets-ai-search-engines.html",
