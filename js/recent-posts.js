@@ -1,5 +1,19 @@
 const POSTS = [
   {
+  img: "img/blog/traditional-retailers-rebrand-digital-video-ads.webp",
+  alt: "How Traditional Retailers Can Rebrand Using Digital Video Ads",
+  href: "traditional-retailers-rebrand-digital-video-ads.html",
+  title: "How Traditional Retailers Can Rebrand Using Digital Video Ads",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/raw-unfiltered-content-outperforms-glossy-ads.webp",
+  alt: "Why Raw, Unfiltered Content Outperforms Highly Glossy Ads on Social Media",
+  href: "raw-unfiltered-content-outperforms-glossy-ads.html",
+  title: "Why Raw, Unfiltered Content Outperforms Highly Glossy Ads",
+  date: "May 2026"
+},
+  {
   img: "img/blog/cinematic-videos-premium-packaging-local-brands.webp",
   alt: "Using Cinematic Videos to Launch Premium Packaging for Local D2C Brands",
   href: "cinematic-videos-premium-packaging-local-brands.html",
