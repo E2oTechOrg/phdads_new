@@ -1,5 +1,12 @@
 const POSTS = [
   {
+  img: "img/blog/candid-brand-photography-authentic-visual-storytelling.webp",
+  alt: "Why Imperfect Candid Brand Photography Outperforms Studio Perfection",
+  href: "candid-brand-photography-authentic-visual-storytelling.html",
+  title: "Why Imperfect \"Candid\" Brand Photography Outperforms Studio Perfection",
+  date: "May 2026"
+},
+  {
   img: "img/blog/multi-platform-video-repurposing-strategy-production-roi.webp",
   alt: "How Savvy Brands Repurpose a Single Video Shoot for Multi-Platform Scale",
   href: "multi-platform-video-repurposing-strategy-production-roi.html",
