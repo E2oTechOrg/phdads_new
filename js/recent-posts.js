@@ -1,5 +1,40 @@
 const POSTS = [
   {
+  img: "img/blog/candid-brand-photography-authentic-visual-storytelling.webp",
+  alt: "Why Imperfect Candid Brand Photography Outperforms Studio Perfection",
+  href: "candid-brand-photography-authentic-visual-storytelling.html",
+  title: "Why Imperfect \"Candid\" Brand Photography Outperforms Studio Perfection",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/multi-platform-video-repurposing-strategy-production-roi.webp",
+  alt: "How Savvy Brands Repurpose a Single Video Shoot for Multi-Platform Scale",
+  href: "multi-platform-video-repurposing-strategy-production-roi.html",
+  title: "How Savvy Brands Repurpose a Single Video Shoot for Multi-Platform Scale",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/creative-ways-use-wedding-media-assets-long-term-memories.webp",
+  alt: "Creative Ways to Use Your Wedding Media Assets for Long-Term Memories",
+  href: "creative-ways-use-wedding-media-assets-long-term-memories.html",
+  title: "Creative Ways to Use Your Wedding Media Assets for Long-Term Memories",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/wedding-timeline-natural-light-photography-schedule.webp",
+  alt: "Scheduling Your Wedding Timeline Around the Best Natural Light",
+  href: "wedding-timeline-natural-light-photography-schedule.html",
+  title: "Scheduling Your Wedding Timeline Around the Best Natural Light",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/storytelling-engagement-photography-cinematic-pre-wedding.webp",
+  alt: "How to Tell Your Love Story Through Conceptual Story-Driven Media",
+  href: "storytelling-engagement-photography-cinematic-pre-wedding.html",
+  title: "How to Tell Your Love Story Through Conceptual, Story-Driven Media",
+  date: "May 2026"
+},
+  {
   img: "img/blog/traditional-retailers-rebrand-digital-video-ads.webp",
   alt: "How Traditional Retailers Can Rebrand Using Digital Video Ads",
   href: "traditional-retailers-rebrand-digital-video-ads.html",
