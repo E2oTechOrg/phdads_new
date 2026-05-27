@@ -1,5 +1,12 @@
 const POSTS = [
   {
+  img: "img/blog/high-texture-product-photography-reduce-returns-ecommerce.webp",
+  alt: "Using High-Texture Close-Up Photography to Lower Online Product Returns",
+  href: "high-texture-product-photography-reduce-returns-ecommerce.html",
+  title: "Using High-Texture Close-Up Photography to Lower Online Product Returns",
+  date: "May 2026"
+},
+  {
   img: "img/blog/candid-brand-photography-authentic-visual-storytelling.webp",
   alt: "Why Imperfect Candid Brand Photography Outperforms Studio Perfection",
   href: "candid-brand-photography-authentic-visual-storytelling.html",
