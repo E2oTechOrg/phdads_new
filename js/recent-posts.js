@@ -1,5 +1,19 @@
 const POSTS = [
   {
+  img: "img/blog/commercial-video-ads-retention-editing-framework.webp",
+  alt: "The 2-Second Retention Threshold - Editing Frameworks for Commercial Video Ads",
+  href: "commercial-video-ads-retention-editing-framework.html",
+  title: "The 2-Second Retention Threshold: Editing Frameworks to Stop the Scroll on Commercial Video Ads",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/wedding-cinematography-color-grading-timeless-palette.webp",
+  alt: "The Teal and Orange Myth - Designing a Timeless Color Palette for Premium Wedding Cinematography",
+  href: "wedding-cinematography-color-grading-timeless-palette.html",
+  title: "The Teal & Orange Myth: Designing a Timeless Color Palette for Premium Wedding Cinematography",
+  date: "May 2026"
+},
+  {
   img: "img/blog/high-texture-product-photography-reduce-returns-ecommerce.webp",
   alt: "Using High-Texture Close-Up Photography to Lower Online Product Returns",
   href: "high-texture-product-photography-reduce-returns-ecommerce.html",
