@@ -1,5 +1,19 @@
 const POSTS = [
   {
+  img: "img/blog/pre-visuals-storyboarding-video-shoot-success.webp",
+  alt: "Why Pre-Visuals and Storyboarding Determine Video Shoot Success",
+  href: "pre-visuals-storyboarding-video-shoot-success.html",
+  title: "Why Pre-Visuals and Storyboarding Determine Video Shoot Success",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/cinemagraph-product-photography-motion-catalog-digital.webp",
+  alt: "Integrating Cinemagraphs and Short Motion Clips into Your Digital Product Catalog",
+  href: "cinemagraph-product-photography-motion-catalog-digital.html",
+  title: "Integrating Cinemagraphs and Short Motion Clips into Your Digital Product Catalog",
+  date: "May 2026"
+},
+  {
   img: "img/blog/commercial-video-ads-retention-editing-framework.webp",
   alt: "The 2-Second Retention Threshold - Editing Frameworks for Commercial Video Ads",
   href: "commercial-video-ads-retention-editing-framework.html",
