@@ -1,5 +1,19 @@
 const POSTS = [
   {
+  img: "img/blog/corporate-overview-video-investor-pitch-fundraising.webp",
+  alt: "The Investor-Ready Pitch - Corporate Overview Video for Fundraising",
+  href: "corporate-overview-video-investor-pitch-fundraising.html",
+  title: "The Investor-Ready Pitch: Crafting a High-Impact Corporate Overview Video for Fundraising",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/aerial-drone-photography-corporate-infrastructure-brand.webp",
+  alt: "Using Architectural Drone Photography to Showcase Large-Scale Brand Infrastructure",
+  href: "aerial-drone-photography-corporate-infrastructure-brand.html",
+  title: "Using Architectural Drone Photography to Showcase Large-Scale Brand Infrastructure",
+  date: "May 2026"
+},
+  {
   img: "img/blog/pre-visuals-storyboarding-video-shoot-success.webp",
   alt: "Why Pre-Visuals and Storyboarding Determine Video Shoot Success",
   href: "pre-visuals-storyboarding-video-shoot-success.html",
