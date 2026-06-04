@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/ar-ready-product-photography-3d-spatial-commerce.webp",
+  alt: "How to Shoot 3D and AR-Ready Product Assets for Spatial Commerce",
+  href: "ar-ready-product-photography-3d-spatial-commerce.html",
+  title: "How to Shoot 3D and AR-Ready Product Assets for Spatial Commerce",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/hero-banner-videography-website-bounce-rate-conversion.webp",
+  alt: "How Hero Banner Videography Prevents Instant Website Bounce Rates",
+  href: "hero-banner-videography-website-bounce-rate-conversion.html",
+  title: "How Hero Banner Videography Prevents Instant Website Bounce Rates",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/executive-headshots-talking-head-videos-linkedin-branding.webp",
+  alt: "Why 4K Cinematic Headshots and Talking-Head Videos are the New Resume",
+  href: "executive-headshots-talking-head-videos-linkedin-branding.html",
+  title: "Why 4K Cinematic Headshots and Talking-Head Videos are the New Resume",
+  date: "May 2026"
+},
+  {
   img: "img/blog/corporate-overview-video-investor-pitch-fundraising.webp",
   alt: "The Investor-Ready Pitch - Corporate Overview Video for Fundraising",
   href: "corporate-overview-video-investor-pitch-fundraising.html",
