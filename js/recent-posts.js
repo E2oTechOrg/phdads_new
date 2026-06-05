@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/video-case-studies-high-conversion-customer-success-stories.webp",
+  alt: "Moving Past Boring PDFs: Turning Customer Success Stories into High-Conversion Video Case Studies",
+  href: "video-case-studies-high-conversion-customer-success-stories.html",
+  title: "Moving Past Boring PDFs: Turning Customer Success Stories into High-Conversion Video Case Studies",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/micro-transitions-sound-design-video-retention.webp",
+  alt: "How Micro-Transitions and Sound Design Keep Audiences Watching",
+  href: "micro-transitions-sound-design-video-retention.html",
+  title: "How Micro-Transitions and Sound Design Keep Audiences Watching",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/fashion-lookbook-production-concept-driven-collection.webp",
+  alt: "Constructing a Concept-Driven Fashion Lookbook That Sells Out Collections",
+  href: "fashion-lookbook-production-concept-driven-collection.html",
+  title: "Constructing a Concept-Driven Fashion Lookbook That Sells Out Collections",
+  date: "May 2026"
+},
+  {
   img: "img/blog/ar-ready-product-photography-3d-spatial-commerce.webp",
   alt: "How to Shoot 3D and AR-Ready Product Assets for Spatial Commerce",
   href: "ar-ready-product-photography-3d-spatial-commerce.html",
