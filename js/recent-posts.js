@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/multi-camera-podcast-set-visual-studio-content-slicing.webp",
+  alt: "The Multi-Camera Podcast Set: Engineering a Visual Studio Environment for Maximum Content Slicing",
+  href: "multi-camera-podcast-set-visual-studio-content-slicing.html",
+  title: "The Multi-Camera Podcast Set: Engineering a Visual Studio Environment for Maximum Content Slicing",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/employer-branding-video-recruitment-corporate-culture.webp",
+  alt: "Why Studio-Quality Employer Branding Videos are Your Best Recruitment Tool",
+  href: "employer-branding-video-recruitment-corporate-culture.html",
+  title: "Why Studio-Quality Employer Branding Videos are Your Best Recruitment Tool",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/product-launch-teaser-strategy-digital-ad-campaign.webp",
+  alt: "The 3-Phase Teaser Strategy for Launching a New Product Line Online",
+  href: "product-launch-teaser-strategy-digital-ad-campaign.html",
+  title: "The 3-Phase Teaser Strategy for Launching a New Product Line Online",
+  date: "May 2026"
+},
+  {
   img: "img/blog/video-case-studies-high-conversion-customer-success-stories.webp",
   alt: "Moving Past Boring PDFs: Turning Customer Success Stories into High-Conversion Video Case Studies",
   href: "video-case-studies-high-conversion-customer-success-stories.html",
