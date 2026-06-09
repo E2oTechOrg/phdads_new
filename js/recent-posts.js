@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/kinetic-typography-dynamic-subtitles-muted-video-psychology.webp",
+  alt: "How Kinetic Typography and Dynamic Subtitles Control the Psychology of Muted Video Views",
+  href: "kinetic-typography-dynamic-subtitles-muted-video-psychology.html",
+  title: "How Kinetic Typography and Dynamic Subtitles Control the Psychology of Muted Video Views",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/split-screen-grid-video-editing-attention-retention.webp",
+  alt: "The Multi-Panel Narrative - Split-Screen and Grid Layout Video Editing for Fragmented Attention Spans",
+  href: "split-screen-grid-video-editing-attention-retention.html",
+  title: "The Multi-Panel Narrative: Using Split-Screen and Grid Layout Video Editing to Match Fragmented Attention Spans",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/genz-social-media-subculture-content-visual-design.webp",
+  alt: "How to Shoot Content Tailored to Gen-Z Social Media Subcultures",
+  href: "genz-social-media-subculture-content-visual-design.html",
+  title: "How to Shoot Content Tailored to Gen-Z Social Media Subcultures",
+  date: "May 2026"
+},
+  {
   img: "img/blog/multi-camera-podcast-set-visual-studio-content-slicing.webp",
   alt: "The Multi-Camera Podcast Set: Engineering a Visual Studio Environment for Maximum Content Slicing",
   href: "multi-camera-podcast-set-visual-studio-content-slicing.html",
