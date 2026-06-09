@@ -20,6 +20,22 @@ const videos = [
     url: "https://youtube.com/shorts/qgEz_HL23MM?feature=share",
     short: true,
   },
+  {
+    cat: "vinayagam-hospital",
+    client: "Vinayagam Hospital",
+    title: "Hospital Brand Film III",
+    ytId: "5VgnibLCqQI",
+    url: "https://youtube.com/shorts/5VgnibLCqQI?feature=share",
+    short: true,
+  },
+  {
+    cat: "vinayagam-hospital",
+    client: "Vinayagam Hospital",
+    title: "Hospital Brand Film IV",
+    ytId: "MoF7ZgGhLjQ",
+    url: "https://youtu.be/MoF7ZgGhLjQ",
+    short: true,
+  },
 
   // AI VIDEO
   {
@@ -102,6 +118,46 @@ const videos = [
     title: "Hospital Video VII",
     ytId: "BKGqozHISCg",
     url: "https://youtube.com/shorts/BKGqozHISCg?feature=share",
+    short: true,
+  },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video VIII",
+    ytId: "pRcQ4ZKstfI",
+    url: "https://youtube.com/shorts/pRcQ4ZKstfI?feature=share",
+    short: true,
+  },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video IX",
+    ytId: "fMIifc4qrdw",
+    url: "https://youtube.com/shorts/fMIifc4qrdw?feature=share",
+    short: true,
+  },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video X",
+    ytId: "w6esovIzRrY",
+    url: "https://youtube.com/shorts/w6esovIzRrY?feature=share",
+    short: true,
+  },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video XI",
+    ytId: "yCimdTGo48Y",
+    url: "https://youtube.com/shorts/yCimdTGo48Y?feature=share",
+    short: true,
+  },
+  {
+    cat: "gani-hospital",
+    client: "Gani Hospital",
+    title: "Hospital Video XII",
+    ytId: "gLK6i58Vq-s",
+    url: "https://youtube.com/shorts/gLK6i58Vq-s?feature=share",
     short: true,
   },
 
@@ -250,6 +306,30 @@ const videos = [
     title: "Product Reel XIII",
     ytId: "wjR2KVgMiIE",
     url: "https://youtube.com/shorts/wjR2KVgMiIE?feature=share",
+    short: true,
+  },
+  {
+    cat: "prana-arc",
+    client: "Prana Arc",
+    title: "Product Reel IIV",
+    ytId: "-dMk25LPgyA",
+    url: " https://youtube.com/shorts/-dMk25LPgyA?feature=share",
+    short: true,
+  },
+   {
+    cat: "prana-arc",
+    client: "Prana Arc",
+    title: "Product Reel VV",
+    ytId: "Wz707CxyQK4",
+    url: "https://youtube.com/shorts/Wz707CxyQK4?feature=share",
+    short: true,
+  },
+  {
+    cat: "prana-arc",
+    client: "Prana Arc",
+    title: "Product Reel VI",
+    ytId: "gvOEDwm9NGU",
+    url: "https://youtube.com/shorts/gvOEDwm9NGU?feature=share",
     short: true,
   },
 
@@ -509,6 +589,18 @@ const videos = [
     url: 'https://youtube.com/shorts/FRmTYW2cLcM?feature=share',
     short: true
   },
+
+  // Gateway Academy
+  {
+  cat: "education",
+  client: "GATEWAY ACADEMY",
+  title: "GATEWAY ACADEMY",
+  ytId: "xlsuWSpjU84",
+  url: "https://youtube.com/shorts/xlsuWSpjU84?feature=share",
+  short: true,
+},
+
+
 ];
 /* ════════════════════════════════════
  HELPERS
