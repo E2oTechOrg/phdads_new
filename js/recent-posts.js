@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/studio-product-photography-3d-environment-compositing.webp",
+  alt: "Merging Studio Product Photography with Hyper-Realistic 3D Environment Composites",
+  href: "studio-product-photography-3d-environment-compositing.html",
+  title: "Merging Studio Product Photography with Hyper-Realistic 3D Environment Composites",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/visual-saliency-photography-ecommerce-conversion-layout.webp",
+  alt: "The Science of Structuring Photography to Guide the Buyer's Eyes to the Add to Cart Button",
+  href: "visual-saliency-photography-ecommerce-conversion-layout.html",
+  title: "The Science of Structuring Photography to Guide the Buyer's Eyes Directly to the \"Add to Cart\" Button",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/immersive-pov-video-production-camera-rigging-marketing.webp",
+  alt: "Camera Rigging Techniques That Place Your Customer Directly Inside the Action",
+  href: "immersive-pov-video-production-camera-rigging-marketing.html",
+  title: "Camera Rigging Techniques That Place Your Customer Directly Inside the Action",
+  date: "May 2026"
+},
+  {
   img: "img/blog/kinetic-typography-dynamic-subtitles-muted-video-psychology.webp",
   alt: "How Kinetic Typography and Dynamic Subtitles Control the Psychology of Muted Video Views",
   href: "kinetic-typography-dynamic-subtitles-muted-video-psychology.html",
