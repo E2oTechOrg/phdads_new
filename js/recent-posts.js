@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/hyper-local-cultural-brand-photography-regional-promotion.webp",
+  alt: "Leveraging Hyper-Local Cultural Elements in Regional Brand Promotion Shoots",
+  href: "hyper-local-cultural-brand-photography-regional-promotion.html",
+  title: "Leveraging Hyper-Local Cultural Elements in Regional Brand Promotion Shoots",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/ai-neural-grading-skin-tones-commercial-color-production.webp",
+  alt: "How AI-Driven Neural Grading Preserves Realistic Skin Tones in Commercial Ads",
+  href: "ai-neural-grading-skin-tones-commercial-color-production.html",
+  title: "How AI-Driven Neural Grading Preserves Realistic Skin Tones in Commercial Ads",
+  date: "May 2026"
+},
+  {
+  img: "img/blog/interactive-branching-video-production-product-exploration.webp",
+  alt: "Building Multi-Branch Interactive Videos to Let Customers Explore Products on Their Own Terms",
+  href: "interactive-branching-video-production-product-exploration.html",
+  title: "Building Multi-Branch Interactive Videos to Let Customers Explore Products on Their Own Terms",
+  date: "May 2026"
+},
+  {
   img: "img/blog/studio-product-photography-3d-environment-compositing.webp",
   alt: "Merging Studio Product Photography with Hyper-Realistic 3D Environment Composites",
   href: "studio-product-photography-3d-environment-compositing.html",
