@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/spatial-video-production-mixed-reality-environments.webp",
+  alt: "The Fundamentals of Spatial Video Production for Mixed-Reality Environments",
+  href: "spatial-video-production-mixed-reality-environments.html",
+  title: "The Fundamentals of Spatial Video Production for Mixed-Reality Environments",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/clean-negative-space-single-source-lighting-luxury-shoots.webp",
+  alt: "Why Clean Negative Space and Single-Source Lighting Win Modern Luxury Shoots",
+  href: "clean-negative-space-single-source-lighting-luxury-shoots.html",
+  title: "Why Clean Negative Space and Single-Source Lighting Win Modern Luxury Shoots",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/custom-foley-sound-design-product-teasers.webp",
+  alt: "Using Custom Foley and Sound Design to Double the Impact of Product Teasers",
+  href: "custom-foley-sound-design-product-teasers.html",
+  title: "Using Custom Foley and Sound Design to Double the Impact of Product Teasers",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/hyper-local-cultural-brand-photography-regional-promotion.webp",
   alt: "Leveraging Hyper-Local Cultural Elements in Regional Brand Promotion Shoots",
   href: "hyper-local-cultural-brand-photography-regional-promotion.html",
