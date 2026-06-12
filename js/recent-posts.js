@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/background-color-schemes-ecommerce-purchase-behavior.webp",
+  alt: "How Selecting the Right Background Color Schemes Changes E-commerce Purchase Behavior",
+  href: "background-color-schemes-ecommerce-purchase-behavior.html",
+  title: "How Selecting the Right Background Color Schemes Changes E-commerce Purchase Behavior",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/corporate-csr-videography-brand-social-impact.webp",
+  alt: "Documenting Your Brand's Impact with High-Integrity CSR Videography",
+  href: "corporate-csr-videography-brand-social-impact.html",
+  title: "Documenting Your Brand's Impact with High-Integrity CSR Videography",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/high-speed-robot-arm-camera-product-promos.webp",
+  alt: "Using High-Speed Robot Arm Camera Movements to Shoot Hypnotic Product Promos",
+  href: "high-speed-robot-arm-camera-product-promos.html",
+  title: "Using High-Speed Robot Arm Camera Movements to Shoot Hypnotic Product Promos",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/spatial-video-production-mixed-reality-environments.webp",
   alt: "The Fundamentals of Spatial Video Production for Mixed-Reality Environments",
   href: "spatial-video-production-mixed-reality-environments.html",
