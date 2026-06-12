@@ -311,7 +311,7 @@ const videos = [
   {
     cat: "prana-arc",
     client: "Prana Arc",
-    title: "Product Reel IIV",
+    title: "Product Reel XIV",
     ytId: "-dMk25LPgyA",
     url: " https://youtube.com/shorts/-dMk25LPgyA?feature=share",
     short: true,
@@ -319,7 +319,7 @@ const videos = [
    {
     cat: "prana-arc",
     client: "Prana Arc",
-    title: "Product Reel VV",
+    title: "Product Reel XV",
     ytId: "Wz707CxyQK4",
     url: "https://youtube.com/shorts/Wz707CxyQK4?feature=share",
     short: true,
@@ -327,7 +327,7 @@ const videos = [
   {
     cat: "prana-arc",
     client: "Prana Arc",
-    title: "Product Reel VI",
+    title: "Product Reel XVI",
     ytId: "gvOEDwm9NGU",
     url: "https://youtube.com/shorts/gvOEDwm9NGU?feature=share",
     short: true,
@@ -669,11 +669,10 @@ function catLabel(cat) {
 function renderGrid(cat) {
   var grid = document.getElementById("shortsGrid");
   var filtered =
-    cat === "all"
-      ? videos
-      : videos.filter(function (v) {
-        return v.cat === cat;
-      });
+  (cat === "all"
+    ? [...videos]
+    : videos.filter(v => v.cat === cat)
+  ).reverse();
 
   if (filtered.length === 0) {
     grid.innerHTML =
