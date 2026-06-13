@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/director-pre-visualization-eliminates-production-errors.webp",
+  alt: "How Advanced Director Pre-Visualization Eliminates Production Errors on Location",
+  href: "director-pre-visualization-eliminates-production-errors.html",
+  title: "How Advanced Director Pre-Visualization Eliminates Production Errors on Location",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/shoppable-click-to-buy-layers-video-ad-assets.webp",
+  alt: "Integrating Shoppable Click-to-Buy Layers into Your Video Ad Assets",
+  href: "shoppable-click-to-buy-layers-video-ad-assets.html",
+  title: "Integrating Shoppable Click-to-Buy Layers into Your Video Ad Assets",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/premium-client-onboarding-videos-b2b-churn-rates.webp",
+  alt: "Why Premium Client Onboarding Videos Drop B2B Software Churn Rates",
+  href: "premium-client-onboarding-videos-b2b-churn-rates.html",
+  title: "Why Premium Client Onboarding Videos Drop B2B Software Churn Rates",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/background-color-schemes-ecommerce-purchase-behavior.webp",
   alt: "How Selecting the Right Background Color Schemes Changes E-commerce Purchase Behavior",
   href: "background-color-schemes-ecommerce-purchase-behavior.html",
