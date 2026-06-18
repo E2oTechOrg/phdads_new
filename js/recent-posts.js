@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/optimizing-website-header-videography-micro-loops-session-boosts.webp",
+  alt: "Optimizing Website Header Videography and Micro-Loops for Instant Session Duration Boosts",
+  href: "optimizing-website-header-videography-micro-loops-session-boosts.html",
+  title: "Optimizing Website Header Videography and Micro-Loops for Instant Session Duration Boosts",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/batch-produce-30-days-instagram-reels-studio-session.webp",
+  alt: "How Brands Can Batch-Produce 30 Days of Instagram Reels in a Single 6-Hour Studio Session",
+  href: "batch-produce-30-days-instagram-reels-studio-session.html",
+  title: "How Brands Can Batch-Produce 30 Days of Instagram Reels in a Single 6-Hour Studio Session",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/using-hyper-targeted-video-case-studies-cold-pitch-enterprise.webp",
+  alt: "Using Hyper-Targeted Video Case Studies to Cold-Pitch and Close Enterprise Accounts",
+  href: "using-hyper-targeted-video-case-studies-cold-pitch-enterprise.html",
+  title: "Using Hyper-Targeted Video Case Studies to Cold-Pitch and Close Enterprise Accounts",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/interactive-video-portfolio-page-client-close-rates.webp",
   alt: "Architecting an Interactive Video Portfolio Page That Speeds Up Client Close Rates",
   href: "interactive-video-portfolio-page-client-close-rates.html",
