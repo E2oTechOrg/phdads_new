@@ -1,5 +1,68 @@
 const POSTS = [
   {
+  img: "img/blog/interactive-video-portfolio-page-client-close-rates.webp",
+  alt: "Architecting an Interactive Video Portfolio Page That Speeds Up Client Close Rates",
+  href: "interactive-video-portfolio-page-client-close-rates.html",
+  title: "Architecting an Interactive Video Portfolio Page That Speeds Up Client Close Rates",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/optimizing-white-background-product-shoots-marketplace-compliance.webp",
+  alt: "Optimizing Pure White-Background Product Shoots for Global Marketplace Compliance",
+  href: "optimizing-white-background-product-shoots-marketplace-compliance.html",
+  title: "Optimizing Pure White-Background Product Shoots for Global Marketplace Compliance",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/industrial-b-roll-libraries-manufacturing-brand-visuals.webp",
+  alt: "How Industrial B-Roll Libraries Transform Complex Manufacturing into Premium Brand Visuals",
+  href: "industrial-b-roll-libraries-manufacturing-brand-visuals.html",
+  title: "How Industrial B-Roll Libraries Transform Complex Manufacturing into Premium Brand Visuals",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/optimizing-cinemagraphs-header-videos-website-session.webp",
+  alt: "Optimizing Cinemagraphs and Header Videos to Double Website Session Durations",
+  href: "optimizing-cinemagraphs-header-videos-website-session.html",
+  title: "Optimizing Cinemagraphs and Header Videos to Double Website Session Durations",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/transparent-video-production-corporate-crisis-communications.webp",
+  alt: "Transparent Video Production Frameworks for Corporate Crisis Communications",
+  href: "transparent-video-production-corporate-crisis-communications.html",
+  title: "Transparent Video Production Frameworks for Corporate Crisis Communications",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/hyper-detailed-macro-photography-product-luxury-online.webp",
+  alt: "Using Hyper-Detailed Macro Photography to Project Product Luxury Online",
+  href: "hyper-detailed-macro-photography-product-luxury-online.html",
+  title: "Using Hyper-Detailed Macro Photography to Project Product Luxury Online",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/3-second-hook-visual-composition-short-form-video.webp",
+  alt: "The 3-Second Hook - Visual Composition Frameworks That Stop the Scroll on Short-Form Video Feeds",
+  href: "3-second-hook-visual-composition-short-form-video.html",
+  title: "The 3-Second Hook — Visual Composition Frameworks That Stop the Scroll on Short-Form Video Feeds",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/editorial-still-life-photography-everyday-goods.webp",
+  alt: "Transforming Everyday Goods into High-Art Editorial Still Life Photography",
+  href: "editorial-still-life-photography-everyday-goods.html",
+  title: "Transforming Everyday Goods into High-Art Editorial Still Life Photography",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/corporate-agm-summit-content-engine.webp",
+  alt: "Maximizing Your Annual Corporate AGM and Summit Into a 6-Month Content Engine",
+  href: "corporate-agm-summit-content-engine.html",
+  title: "Maximizing Your Annual Corporate AGM and Summit Into a 6-Month Content Engine",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/director-pre-visualization-eliminates-production-errors.webp",
   alt: "How Advanced Director Pre-Visualization Eliminates Production Errors on Location",
   href: "director-pre-visualization-eliminates-production-errors.html",
