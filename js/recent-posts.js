@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/staging-fine-art-editorial-still-lifes-luxury-lookbooks.webp",
+  alt: "Staging Fine-Art Editorial Still Lifes for Premium Luxury Lookbooks",
+  href: "staging-fine-art-editorial-still-lifes-luxury-lookbooks.html",
+  title: "Staging Fine-Art Editorial Still Lifes for Premium Luxury Lookbooks",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/editing-workflows-emotional-documentary-wedding-films.webp",
+  alt: "Editing Workflows for Emotional Documentary Wedding Films",
+  href: "editing-workflows-emotional-documentary-wedding-films.html",
+  title: "Editing Workflows for Emotional Documentary Wedding Films",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/avoiding-visual-overload-crowded-marriage-halls.webp",
+  alt: "Avoiding Visual Overload in Massively Crowded Marriage Halls",
+  href: "avoiding-visual-overload-crowded-marriage-halls.html",
+  title: "Avoiding Visual Overload in Massively Crowded Marriage Halls",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/optimizing-website-header-videography-micro-loops-session-boosts.webp",
   alt: "Optimizing Website Header Videography and Micro-Loops for Instant Session Duration Boosts",
   href: "optimizing-website-header-videography-micro-loops-session-boosts.html",
