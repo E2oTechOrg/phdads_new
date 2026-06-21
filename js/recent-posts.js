@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/premium-employer-branding-videos-recruitment-ads.webp",
+  alt: "Why Premium Employer Branding Videos Outperform Traditional Recruitment Ads",
+  href: "premium-employer-branding-videos-recruitment-ads.html",
+  title: "Why Premium Employer Branding Videos Outperform Traditional Recruitment Ads",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/real-model-alternative-angling-buyer-confidence.webp",
+  alt: "Why Real-Model Alternative Angling Multiplies Buyer Confidence",
+  href: "real-model-alternative-angling-buyer-confidence.html",
+  title: "Why Real-Model Alternative Angling Multiplies Buyer Confidence",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/retaining-razor-sharp-zoom-quality-site-speeds.webp",
+  alt: "Retaining Razor-Sharp Zoom Quality While Maintaining Under-1s Site Speeds",
+  href: "retaining-razor-sharp-zoom-quality-site-speeds.html",
+  title: "Retaining Razor-Sharp Zoom Quality While Maintaining Under-1s Site Speeds",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/staging-fine-art-editorial-still-lifes-luxury-lookbooks.webp",
   alt: "Staging Fine-Art Editorial Still Lifes for Premium Luxury Lookbooks",
   href: "staging-fine-art-editorial-still-lifes-luxury-lookbooks.html",
