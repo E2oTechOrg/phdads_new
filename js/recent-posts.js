@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/physical-media-studio-google-maps-3-pack.webp",
+  alt: "Pushing Your Physical Media Studio Into the Google Maps 3-Pack",
+  href: "physical-media-studio-google-maps-3-pack.html",
+  title: "Pushing Your Physical Media Studio Into the Google Maps 3-Pack",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/batch-shoot-30-days-video-assets-6-hour-session.webp",
+  alt: "How Brands Can Batch-Shoot 30 Days of Video Assets in One 6-Hour Session",
+  href: "batch-shoot-30-days-video-assets-6-hour-session.html",
+  title: "How Brands Can Batch-Shoot 30 Days of Video Assets in One 6-Hour Session",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/rigorous-technical-workflows-filming-executive-statements.webp",
+  alt: "Rigorous Technical Workflows for Filming Executive Statements under Pressure",
+  href: "rigorous-technical-workflows-filming-executive-statements.html",
+  title: "Rigorous Technical Workflows for Filming Executive Statements under Pressure",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/premium-employer-branding-videos-recruitment-ads.webp",
   alt: "Why Premium Employer Branding Videos Outperform Traditional Recruitment Ads",
   href: "premium-employer-branding-videos-recruitment-ads.html",
