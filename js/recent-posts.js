@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/intricate-product-details-visual-perspective-macro.webp",
+  alt: "Pulling Intricate, Intimate Product Details Without Sacrificing Visual Perspective",
+  href: "intricate-product-details-visual-perspective-macro.html",
+  title: "Pulling Intricate, Intimate Product Details Without Sacrificing Visual Perspective",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/ambient-audio-design-high-end-brand-promotional-videos.webp",
+  alt: "Why Ambient Audio Design is the Unsung Hero of High-End Brand Promotional Videos",
+  href: "ambient-audio-design-high-end-brand-promotional-videos.html",
+  title: "Why Ambient Audio Design is the Unsung Hero of High-End Brand Promotional Videos",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/architecting-creative-portfolio-generative-engine-optimization.webp",
+  alt: "Architecting Your Creative Portfolio for Generative Engine Optimization (GEO)",
+  href: "architecting-creative-portfolio-generative-engine-optimization.html",
+  title: "Architecting Your Creative Portfolio for Generative Engine Optimization (GEO)",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/physical-media-studio-google-maps-3-pack.webp",
   alt: "Pushing Your Physical Media Studio Into the Google Maps 3-Pack",
   href: "physical-media-studio-google-maps-3-pack.html",
