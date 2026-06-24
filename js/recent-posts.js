@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/camera-rigging-frameworks-audience-creator-shoes.webp",
+  alt: "Camera Rigging Frameworks That Put Your Audience in the Creator's Shoes",
+  href: "camera-rigging-frameworks-audience-creator-shoes.html",
+  title: "Camera Rigging Frameworks That Put Your Audience in the Creator's Shoes",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/corporate-media-governance-protect-store-4k-raw-files.webp",
+  alt: "Structuring Corporate Media Governance to Protect and Store Millions of 4K RAW Files",
+  href: "corporate-media-governance-protect-store-4k-raw-files.html",
+  title: "Structuring Corporate Media Governance to Protect and Store Millions of 4K RAW Files",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/multi-camera-video-podcast-environment-social-virality.webp",
+  alt: "Setting Up a Multi-Camera Video Podcast Environment Built for Social Virality",
+  href: "multi-camera-video-podcast-environment-social-virality.html",
+  title: "Setting Up a Multi-Camera Video Podcast Environment Built for Social Virality",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/intricate-product-details-visual-perspective-macro.webp",
   alt: "Pulling Intricate, Intimate Product Details Without Sacrificing Visual Perspective",
   href: "intricate-product-details-visual-perspective-macro.html",
