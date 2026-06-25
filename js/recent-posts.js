@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/modular-short-form-asset-system-meta-google-ad-testing.webp",
+  alt: "Structuring a Modular Short-Form Asset System to Fuel Meta and Google Ad Creative Testing",
+  href: "modular-short-form-asset-system-meta-google-ad-testing.html",
+  title: "Structuring a Modular Short-Form Asset System to Fuel Meta and Google Ad Creative Testing",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/hardware-calibrated-color-workspace-zero-discrepancy-catalog.webp",
+  alt: "Setting Up a Hardware-Calibrated Color Workspace for Zero-Discrepancy Catalog Shoots",
+  href: "hardware-calibrated-color-workspace-zero-discrepancy-catalog.html",
+  title: "Setting Up a Hardware-Calibrated Color Workspace for Zero-Discrepancy Catalog Shoots",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/generative-ai-ultra-precise-storyboards-before-set.webp",
+  alt: "Using Generative AI to Design Ultra-Precise Storyboards Before Hitting the Set",
+  href: "generative-ai-ultra-precise-storyboards-before-set.html",
+  title: "Using Generative AI to Design Ultra-Precise Storyboards Before Hitting the Set",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/camera-rigging-frameworks-audience-creator-shoes.webp",
   alt: "Camera Rigging Frameworks That Put Your Audience in the Creator's Shoes",
   href: "camera-rigging-frameworks-audience-creator-shoes.html",
