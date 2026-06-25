@@ -100,19 +100,30 @@ const videos = [
 ];
 
 /* ════════════════════════════════════
-   HELPERS
+   CONFIG
 ════════════════════════════════════ */
+var BATCH_SIZE  = 4;     // videos per batch
+var SETTLE_TIME = 900;   // ms — small fixed wait after the iframe fires
+                          // "load" before treating it as ready. autoplay=1
+                          // already starts the video the instant the
+                          // iframe loads; this is just enough buffer for
+                          // the picture to actually paint a frame.
 
-/** Build the YouTube autoplay embed URL */
-function embedUrl(v) {
+/* ════════════════════════════════════
+   HELPERS
+   Plain hand-built iframe with autoplay=1 — this is what actually plays
+   fast. (A previous attempt routed playback through the YouTube
+   IFrame JS API / YT.Player, which has its own slow init handshake and
+   was the real source of the 1-2 minute delay — removed entirely.)
+════════════════════════════════════ */
+function embedUrl(ytId) {
   return (
-    "https://www.youtube.com/embed/" + v.ytId +
-    "?autoplay=1&mute=1&loop=1&playlist=" + v.ytId +
-    "&playsinline=1&controls=0&rel=0&modestbranding=1&enablejsapi=0"
+    "https://www.youtube.com/embed/" + ytId +
+    "?autoplay=1&mute=1&loop=1&playlist=" + ytId +
+    "&playsinline=1&controls=0&rel=0&modestbranding=1"
   );
 }
 
-/** Human-readable category label */
 function catLabel(cat) {
   var map = {
     "lawyer":                    "Lawyer",
@@ -130,165 +141,253 @@ function catLabel(cat) {
 }
 
 /* ════════════════════════════════════
-   LAZY-LOAD via IntersectionObserver
-   Cards show a YouTube thumbnail first.
-   The real autoplay iframe is injected
-   only when the card enters the viewport
-   (with a 100 px look-ahead margin).
+   STYLES
 ════════════════════════════════════ */
-var lazyObserver = null;
+(function injectStyles() {
+  if (document.getElementById("phd-pf-styles")) return;
+  var s = document.createElement("style");
+  s.id = "phd-pf-styles";
+  s.textContent = `
 
-function initLazyObserver() {
-  if (!("IntersectionObserver" in window)) {
-    /* Fallback for very old browsers: activate everything immediately */
-    document.querySelectorAll(".video-wrap[data-ytid]").forEach(activateIframe);
+    /* ── Mobile filter scroll ── */
+    @media (max-width:768px) {
+      #filterTabs {
+        display: flex !important; flex-wrap: nowrap !important;
+        overflow-x: auto !important; -webkit-overflow-scrolling: touch;
+        justify-content: flex-start !important; gap: 8px !important;
+        padding: 12px 16px 16px !important; margin-bottom: 24px !important;
+        scrollbar-width: none;
+      }
+      #filterTabs::-webkit-scrollbar { display: none; }
+      #filterTabs .filter-tab { flex-shrink: 0 !important; white-space: nowrap !important; }
+    }
+
+    /* ── Card appear ── */
+    .short-card { animation: phdFadeUp 0.35s ease both; }
+    @keyframes phdFadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Page-level bottom loader ── */
+    #pf-loader {
+      display: none;
+      width: 100%; padding: 40px 0 20px;
+      text-align: center; grid-column: 1 / -1;
+    }
+    #pf-loader.active { display: block; }
+
+    .pf-dots { display: inline-flex; align-items: center; gap: 8px; }
+    .pf-dots span {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #ff4800; display: inline-block;
+      animation: dotBounce 1.2s ease-in-out infinite;
+    }
+    .pf-dots span:nth-child(2) { animation-delay: 0.2s; }
+    .pf-dots span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dotBounce {
+      0%,80%,100% { transform: translateY(0);    opacity: 0.4; }
+      40%          { transform: translateY(-10px); opacity: 1; }
+    }
+    .pf-loader-text {
+      display: block; margin-top: 12px;
+      font-size: 13px; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: #ff4800; opacity: 0.8;
+    }
+
+  `;
+  document.head.appendChild(s);
+})();
+
+/* ════════════════════════════════════
+   PAGE-LEVEL LOADER
+════════════════════════════════════ */
+var loaderEl = (function () {
+  var el = document.createElement("div");
+  el.id = "pf-loader";
+  el.innerHTML =
+    '<div class="pf-dots"><span></span><span></span><span></span></div>' +
+    '<span class="pf-loader-text">Loading videos…</span>';
+  return el;
+})();
+
+function showLoader() {
+  var grid = document.getElementById("shortsGrid");
+  if (loaderEl.parentNode !== grid.parentNode || loaderEl.previousSibling !== grid) {
+    grid.after(loaderEl);
+  }
+  loaderEl.classList.add("active");
+}
+function hideLoader() {
+  loaderEl.classList.remove("active");
+}
+
+/* ════════════════════════════════════
+   OFFSCREEN PRELOAD HOST
+   Iframes are built here so YouTube
+   can start loading while invisible.
+   Card moves to the visible grid only
+   after its video is autoplaying.
+════════════════════════════════════ */
+var offscreen = (function () {
+  var el = document.createElement("div");
+  el.style.cssText =
+    "position:fixed;top:-9999px;left:-9999px;" +
+    "width:220px;height:391px;" +
+    "pointer-events:none;visibility:hidden;";
+  document.body.appendChild(el);
+  return el;
+})();
+
+/* ════════════════════════════════════
+   STATE
+════════════════════════════════════ */
+var videoQueue  = [];   // remaining video objects
+var renderToken = 0;    // bumped on every renderGrid() call to invalidate
+                         // in-flight batches from a previous filter selection
+
+/* ════════════════════════════════════
+   BUILD CARD
+════════════════════════════════════ */
+function buildCard(v) {
+  var card = document.createElement("div");
+  card.className = "short-card";
+
+  var iframe = document.createElement("iframe");
+  iframe.src = embedUrl(v.ytId);
+  iframe.setAttribute("allow", "autoplay; encrypted-media");
+  iframe.setAttribute("allowfullscreen", "");
+  iframe.setAttribute("title", v.title);
+  iframe.style.cssText =
+    "position:absolute;inset:0;width:100%;height:100%;border:none;display:block;";
+
+  var wrap = document.createElement("div");
+  wrap.className = "video-wrap";
+  wrap.style.cssText = "position:absolute;inset:0;pointer-events:none;";
+  wrap.appendChild(iframe);
+
+  card.innerHTML =
+    '<div class="cat-badge">'   + catLabel(v.cat) + '</div>' +
+    '<a class="open-btn" href="' + v.url + '" target="_blank" rel="noopener">' +
+      '<svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>' +
+      'Watch on YouTube' +
+    '</a>' +
+    '<div class="card-label">' +
+      '<div class="client-name">' + v.client + '</div>' +
+      '<div class="video-title">'  + v.title  + '</div>' +
+    '</div>' +
+    '<div class="click-open"></div>';
+
+  card.insertBefore(wrap, card.firstChild);
+
+  card.querySelector(".click-open").addEventListener("click", function () {
+    window.open(v.url, "_blank", "noopener,noreferrer");
+  });
+
+  return { card: card, iframe: iframe };
+}
+
+/* ════════════════════════════════════
+   LOAD ONE BATCH
+   Builds up to BATCH_SIZE iframes offscreen with autoplay=1 (the iframe
+   itself drives playback — no JS player API involved). As soon as each
+   iframe fires its native "load" event, we wait a short fixed
+   SETTLE_TIME so the first frame has actually painted, then count it
+   ready. Once every video in the batch is ready, the whole batch moves
+   into the visible grid together, and the next batch starts loading
+   immediately after — strictly one batch at a time, no overlap, no
+   scroll gating.
+════════════════════════════════════ */
+function loadBatch(myToken) {
+  if (myToken !== renderToken) return; // a newer filter selection superseded this run
+
+  var batch = videoQueue.splice(0, BATCH_SIZE);
+  if (batch.length === 0) {
+    hideLoader();
     return;
   }
 
-  lazyObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        activateIframe(entry.target);
-        lazyObserver.unobserve(entry.target);
-      }
+  showLoader();
+
+  var readyCards = [];   // cards that have finished, in order
+  var readyCount = 0;
+
+  function onBatchComplete() {
+    if (myToken !== renderToken) return; // filter changed while this batch was loading
+
+    readyCards.forEach(function (card) {
+      if (card.parentNode) card.parentNode.removeChild(card);
+      document.getElementById("shortsGrid").appendChild(card);
     });
-  }, { rootMargin: "100px 0px" });
 
-  document.querySelectorAll(".video-wrap[data-ytid]").forEach(function(el) {
-    lazyObserver.observe(el);
+    if (videoQueue.length > 0) {
+      loadBatch(myToken); // next batch starts only now — strictly sequential
+    } else {
+      hideLoader();
+    }
+  }
+
+  batch.forEach(function (v, idx) {
+    var built  = buildCard(v);
+    var card   = built.card;
+    var iframe = built.iframe;
+
+    readyCards[idx] = card;
+    offscreen.appendChild(card);
+
+    function markReady() {
+      readyCount++;
+      if (readyCount === batch.length) {
+        onBatchComplete();
+      }
+    }
+
+    iframe.addEventListener("load", function () {
+      setTimeout(markReady, SETTLE_TIME);
+    }, { once: true });
   });
-}
-
-function activateIframe(wrap) {
-  if (wrap.querySelector("iframe")) return; /* guard: already activated */
-
-  /* Remove thumbnail overlay */
-  var thumb = wrap.querySelector(".yt-thumb");
-  if (thumb) thumb.remove();
-
-  var iframe = document.createElement("iframe");
-  iframe.src = wrap.dataset.src;
-  iframe.setAttribute("allow", "autoplay; encrypted-media");
-  iframe.setAttribute("allowfullscreen", "");
-  iframe.setAttribute("title", wrap.dataset.title || "");
-  iframe.style.cssText = "width:100%;height:100%;border:none;display:block;";
-  wrap.appendChild(iframe);
 }
 
 /* ════════════════════════════════════
    RENDER GRID
 ════════════════════════════════════ */
 function renderGrid(cat) {
-  /* Disconnect observer before rebuilding DOM */
-  if (lazyObserver) {
-    lazyObserver.disconnect();
-    lazyObserver = null;
-  }
+  renderToken++;
+  var myToken = renderToken;
 
-  var grid = document.getElementById("shortsGrid");
+  videoQueue = [];
+  offscreen.innerHTML = "";
+  hideLoader();
+
+  var grid     = document.getElementById("shortsGrid");
   var filtered = (cat === "all"
-    ? [...videos]
-    : videos.filter(function(v) { return v.cat === cat; })
+    ? videos.slice()
+    : videos.filter(function (v) { return v.cat === cat; })
   ).reverse();
+
+  grid.innerHTML = "";
 
   if (filtered.length === 0) {
     grid.innerHTML = '<div class="empty-state"><p>No videos in this category yet.</p></div>';
     return;
   }
 
-  /* Build card HTML — iframe NOT injected yet (lazy) */
-  grid.innerHTML = filtered.map(function(v, i) {
-    var src      = embedUrl(v);
-    /* hqdefault = 480x360 thumbnail, fast to load */
-    var thumbUrl = "https://i.ytimg.com/vi/" + v.ytId + "/hqdefault.jpg";
-    var delay    = Math.min(i * 0.05, 0.6).toFixed(2);
-
-    return [
-      '<div class="short-card" style="animation-delay:' + delay + 's">',
-
-        /* Lazy wrapper — stores embed src in data attribute */
-        '<div class="video-wrap"',
-          ' data-ytid="' + v.ytId + '"',
-          ' data-src="'  + src     + '"',
-          ' data-title="' + v.title.replace(/"/g, '&quot;') + '"',
-        '>',
-          /* Thumbnail shown until IntersectionObserver fires */
-          '<div class="yt-thumb" style="',
-            'position:absolute;inset:0;',
-            'background:url(\'' + thumbUrl + '\') center/cover no-repeat;',
-          '"></div>',
-        '</div>',
-
-        '<div class="cat-badge">' + catLabel(v.cat) + '</div>',
-
-        '<a class="open-btn" href="' + v.url + '" target="_blank" rel="noopener">',
-          '<svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>',
-          'Watch on YouTube',
-        '</a>',
-
-        '<div class="card-label">',
-          '<div class="client-name">' + v.client + '</div>',
-          '<div class="video-title">'  + v.title  + '</div>',
-        '</div>',
-
-        /* Full-card click opens YouTube */
-        '<div class="click-open" onclick="window.open(\'' + v.url + '\',\'_blank\',\'noopener,noreferrer\')"></div>',
-
-      '</div>',
-    ].join("");
-  }).join("");
-
-  /* Attach lazy observer to freshly rendered wraps */
-  initLazyObserver();
+  videoQueue = filtered.slice();
+  loadBatch(myToken);
 }
 
 /* ════════════════════════════════════
-   FILTER TAB CLICKS
+   FILTER TABS
 ════════════════════════════════════ */
-document.getElementById("filterTabs").addEventListener("click", function(e) {
+document.getElementById("filterTabs").addEventListener("click", function (e) {
   var btn = e.target.closest(".filter-tab");
   if (!btn) return;
-
-  document.querySelectorAll(".filter-tab").forEach(function(t) {
-    t.classList.remove("active");
-  });
+  document.querySelectorAll(".filter-tab").forEach(function (t) { t.classList.remove("active"); });
   btn.classList.add("active");
-
-  /* Scroll active tab into view (key for mobile horizontal scroll) */
   btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-
   renderGrid(btn.getAttribute("data-cat"));
 });
-
-/* ════════════════════════════════════
-   MOBILE FILTER TABS — horizontal scroll
-   Styles injected at runtime so no extra
-   CSS file edit is required.
-════════════════════════════════════ */
-(function injectMobileTabStyles() {
-  var style = document.createElement("style");
-  style.textContent = [
-    "@media (max-width: 768px) {",
-    "  #filterTabs {",
-    "    display: flex !important;",
-    "    flex-wrap: nowrap !important;",
-    "    overflow-x: auto !important;",
-    "    -webkit-overflow-scrolling: touch;",
-    "    justify-content: flex-start !important;",
-    "    gap: 8px !important;",
-    "    padding: 12px 16px 16px !important;",
-    "    margin-bottom: 24px !important;",
-    "    scrollbar-width: none;",
-    "  }",
-    "  #filterTabs::-webkit-scrollbar { display: none; }",
-    "  #filterTabs .filter-tab {",
-    "    flex-shrink: 0 !important;",
-    "    white-space: nowrap !important;",
-    "  }",
-    "}",
-  ].join("\n");
-  document.head.appendChild(style);
-})();
 
 /* ════════════════════════════════════
    INITIAL RENDER
