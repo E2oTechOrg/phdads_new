@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/venue-mixer-patching-prevents-echo-muffled-vows-wedding-films.webp",
+  alt: "Why Patching Into the Venue Mixer Prevents Echo and Muffled Vows in Wedding Films",
+  href: "venue-mixer-patching-prevents-echo-muffled-vows-wedding-films.html",
+  title: "Why Patching Into the Venue Mixer Prevents Echo and Muffled Vows in Wedding Films",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/structuring-multi-day-media-timeline-traditional-weddings.webp",
+  alt: "Structuring a Multi-Day Media Timeline for Sprawling Traditional Weddings",
+  href: "structuring-multi-day-media-timeline-traditional-weddings.html",
+  title: "Structuring a Multi-Day Media Timeline for Sprawling Traditional Weddings",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/optimizing-website-header-videography-micro-loops-session-duration.webp",
+  alt: "Optimizing Website Header Videography and Micro-Loops for Instant Session Duration Boosts",
+  href: "optimizing-website-header-videography-micro-loops-session-duration.html",
+  title: "Optimizing Website Header Videography and Micro-Loops for Instant Session Duration Boosts",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/modular-short-form-asset-system-meta-google-ad-testing.webp",
   alt: "Structuring a Modular Short-Form Asset System to Fuel Meta and Google Ad Creative Testing",
   href: "modular-short-form-asset-system-meta-google-ad-testing.html",
