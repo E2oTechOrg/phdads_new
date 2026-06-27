@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/true-anamorphic-lenses-wedding-film-hollywood-aspect-ratio.webp",
+  alt: "Why True Anamorphic Lenses Give Your Wedding Film an Authentic Hollywood Aspect Ratio",
+  href: "true-anamorphic-lenses-wedding-film-hollywood-aspect-ratio.html",
+  title: "Why True Anamorphic Lenses Give Your Wedding Film an Authentic Hollywood Aspect Ratio",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/macro-lens-techniques-gemstone-geometry-bridal-jewelry.webp",
+  alt: "Macro Lens Techniques to Capture the Intricate Gemstone Geometry of Bridal Jewelry",
+  href: "macro-lens-techniques-gemstone-geometry-bridal-jewelry.html",
+  title: "Macro Lens Techniques to Capture the Intricate Gemstone Geometry of Bridal Jewelry",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/stealth-lighting-setups-unposed-reception-candids.webp",
+  alt: "Directing Stealth Lighting Setups for Natural, Unposed Reception Party Candids",
+  href: "stealth-lighting-setups-unposed-reception-candids.html",
+  title: "Directing Stealth Lighting Setups for Natural, Unposed Reception Party Candids",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/venue-mixer-patching-prevents-echo-muffled-vows-wedding-films.webp",
   alt: "Why Patching Into the Venue Mixer Prevents Echo and Muffled Vows in Wedding Films",
   href: "venue-mixer-patching-prevents-echo-muffled-vows-wedding-films.html",
