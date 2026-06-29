@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/separate-photo-video-vendors-double-wedding-stress.webp",
+  alt: "Why Separate Photo and Video Vendors Secretly Double Your Wedding Day Stress",
+  href: "separate-photo-video-vendors-double-wedding-stress.html",
+  title: "Why Separate Photo and Video Vendors Secretly Double Your Wedding Day Stress",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/true-color-camera-calibrations-bridal-kanjeevaram-silk.webp",
+  alt: "How True-Color Camera Calibrations Protect Bridal Kanjeevaram Silk Textures",
+  href: "true-color-camera-calibrations-bridal-kanjeevaram-silk.html",
+  title: "How True-Color Camera Calibrations Protect Bridal Kanjeevaram Silk Textures",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/synchronizing-multi-camera-angles-crucial-marriage-ceremonies.webp",
+  alt: "Synchronizing Multi-Camera Angles for Crucial Marriage Ceremonies",
+  href: "synchronizing-multi-camera-angles-crucial-marriage-ceremonies.html",
+  title: "Synchronizing Multi-Camera Angles for Crucial Marriage Ceremonies",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/true-anamorphic-lenses-wedding-film-hollywood-aspect-ratio.webp",
   alt: "Why True Anamorphic Lenses Give Your Wedding Film an Authentic Hollywood Aspect Ratio",
   href: "true-anamorphic-lenses-wedding-film-hollywood-aspect-ratio.html",
