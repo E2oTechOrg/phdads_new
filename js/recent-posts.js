@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/ai-driven-neural-grading-corrects-studio-lighting-errors.webp",
+  alt: "How AI-Driven Neural Grading Corrects Complex Studio Lighting Errors in Seconds",
+  href: "ai-driven-neural-grading-corrects-studio-lighting-errors.html",
+  title: "How AI-Driven Neural Grading Corrects Complex Studio Lighting Errors in Seconds",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/data-accurate-color-science-beats-trendy-internet-video-filters.webp",
+  alt: "Why Data-Accurate Color Science Beats Trendy Internet Video Filters for Heirloom Visuals",
+  href: "data-accurate-color-science-beats-trendy-internet-video-filters.html",
+  title: "Why Data-Accurate Color Science Beats Trendy Internet Video Filters for Heirloom Visuals",
+  date: "Jun 2026"
+},
+  {
+  img: "img/blog/digital-ingestion-pipeline-rapid-wedding-photo-sneak-peeks.webp",
+  alt: "Inside the Digital Ingestion Pipeline That Delivers Rapid Wedding Photo Sneak Peeks",
+  href: "digital-ingestion-pipeline-rapid-wedding-photo-sneak-peeks.html",
+  title: "Inside the Digital Ingestion Pipeline That Delivers Rapid Wedding Photo Sneak Peeks",
+  date: "Jun 2026"
+},
+  {
   img: "img/blog/separate-photo-video-vendors-double-wedding-stress.webp",
   alt: "Why Separate Photo and Video Vendors Secretly Double Your Wedding Day Stress",
   href: "separate-photo-video-vendors-double-wedding-stress.html",
