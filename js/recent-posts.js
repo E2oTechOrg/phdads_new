@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/ai-face-swapping-localized-digital-ad-personalization.webp",
+  alt: "Utilizing Advanced AI Face-Swapping Infrastructure for Localized Digital Ad Personalization",
+  href: "ai-face-swapping-localized-digital-ad-personalization.html",
+  title: "Utilizing Advanced AI Face-Swapping Infrastructure for Localized Digital Ad Personalization",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/ai-text-motion-tools-retain-soundless-social-media-scrollers.webp",
+  alt: "Harnessing AI Text Motion Tools to Retain Soundless Social Media Video Scrollers",
+  href: "ai-text-motion-tools-retain-soundless-social-media-scrollers.html",
+  title: "Harnessing AI Text Motion Tools to Retain Soundless Social Media Video Scrollers",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/generative-ai-pre-visualize-directorial-shot-lists.webp",
+  alt: "Using Generative AI to Pre-Visualize Directorial Shot Lists Before Hitting the Set",
+  href: "generative-ai-pre-visualize-directorial-shot-lists.html",
+  title: "Using Generative AI to Pre-Visualize Directorial Shot Lists Before Hitting the Set",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/ai-driven-neural-grading-corrects-studio-lighting-errors.webp",
   alt: "How AI-Driven Neural Grading Corrects Complex Studio Lighting Errors in Seconds",
   href: "ai-driven-neural-grading-corrects-studio-lighting-errors.html",
