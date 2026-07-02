@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/ai-face-mapping-lip-sync-models-borderless-brand-promotion.webp",
+  alt: "Deploying AI Face-Mapping and Lip-Sync Models for Borderless Brand Promotion Videos",
+  href: "ai-face-mapping-lip-sync-models-borderless-brand-promotion.html",
+  title: "Deploying AI Face-Mapping and Lip-Sync Models for Borderless Brand Promotion Videos",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/neural-radiance-fields-nerf-map-physical-shoot-locations-3d.webp",
+  alt: "Using Neural Radiance Fields (NeRF) to Map Physical Shoot Locations in 3D Prior to Production",
+  href: "neural-radiance-fields-nerf-map-physical-shoot-locations-3d.html",
+  title: "Using Neural Radiance Fields (NeRF) to Map Physical Shoot Locations in 3D Prior to Production",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/ai-animation-models-sync-corporate-logo-motion-sonic-branding.webp",
+  alt: "Using AI Animation Models to Sync Corporate Logo Motion with Custom Sonic Branding",
+  href: "ai-animation-models-sync-corporate-logo-motion-sonic-branding.html",
+  title: "Using AI Animation Models to Sync Corporate Logo Motion with Custom Sonic Branding",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/ai-face-swapping-localized-digital-ad-personalization.webp",
   alt: "Utilizing Advanced AI Face-Swapping Infrastructure for Localized Digital Ad Personalization",
   href: "ai-face-swapping-localized-digital-ad-personalization.html",
