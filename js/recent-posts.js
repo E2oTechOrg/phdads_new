@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/high-conversion-personal-branding-frameworks-high-ticket-services.webp",
+  alt: "High-Conversion Personal Branding Frameworks for High-Ticket Services",
+  href: "high-conversion-personal-branding-frameworks-high-ticket-services.html",
+  title: "High-Conversion Personal Branding Frameworks for High-Ticket Services",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/hiring-premium-personal-branding-consultant.webp",
+  alt: "What to Look For When Hiring a Premium Personal Branding Consultant",
+  href: "hiring-premium-personal-branding-consultant.html",
+  title: "What to Look For When Hiring a Premium Personal Branding Consultant",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/executive-personal-branding-strategy-board-level-inbound-leads.webp",
+  alt: "How to Structure an Executive Personal Branding Strategy That Attracts Board-Level Inbound Leads",
+  href: "executive-personal-branding-strategy-board-level-inbound-leads.html",
+  title: "How to Structure an Executive Personal Branding Strategy That Attracts Board-Level Inbound Leads",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/ai-face-mapping-lip-sync-models-borderless-brand-promotion.webp",
   alt: "Deploying AI Face-Mapping and Lip-Sync Models for Borderless Brand Promotion Videos",
   href: "ai-face-mapping-lip-sync-models-borderless-brand-promotion.html",
