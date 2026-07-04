@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/thought-leadership-session-30-day-multi-platform-growth-engine.webp",
+  alt: "Slicing a Single Thought Leadership Session into a 30-Day Multi-Platform Growth Engine",
+  href: "thought-leadership-session-30-day-multi-platform-growth-engine.html",
+  title: "Slicing a Single Thought Leadership Session into a 30-Day Multi-Platform Growth Engine",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/high-conversion-personal-website-blueprint-service-providers.webp",
+  alt: "Crafting a High-Conversion Personal Website Blueprint for Independent Service Providers",
+  href: "high-conversion-personal-website-blueprint-service-providers.html",
+  title: "Crafting a High-Conversion Personal Website Blueprint for Independent Service Providers",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/professional-development-goals-startup-founders.webp",
+  alt: "Constructing Impactful Professional Development Goals for Startup Founders",
+  href: "professional-development-goals-startup-founders.html",
+  title: "Constructing Impactful Professional Development Goals for Startup Founders",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/high-conversion-personal-branding-frameworks-high-ticket-services.webp",
   alt: "High-Conversion Personal Branding Frameworks for High-Ticket Services",
   href: "high-conversion-personal-branding-frameworks-high-ticket-services.html",
