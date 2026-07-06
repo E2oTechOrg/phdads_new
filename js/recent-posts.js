@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/short-form-visual-slicing-playbook-executive-thought-leaders.webp",
+  alt: "The Short-Form Visual Slicing Playbook for Executive Thought Leaders",
+  href: "short-form-visual-slicing-playbook-executive-thought-leaders.html",
+  title: "The Short-Form Visual Slicing Playbook for Executive Thought Leaders",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/generic-service-provider-to-category-one-industry-authority.webp",
+  alt: "How to Move from Generic Service Provider to Category-of-One Industry Authority",
+  href: "generic-service-provider-to-category-one-industry-authority.html",
+  title: "How to Move from Generic Service Provider to Category-of-One Industry Authority",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/personal-brand-metrics-predict-business-pipeline-expansion.webp",
+  alt: "The Core Personal Brand Metrics That Predict Consistent Business Pipeline Expansion",
+  href: "personal-brand-metrics-predict-business-pipeline-expansion.html",
+  title: "The Core Personal Brand Metrics That Predict Consistent Business Pipeline Expansion",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/thought-leadership-session-30-day-multi-platform-growth-engine.webp",
   alt: "Slicing a Single Thought Leadership Session into a 30-Day Multi-Platform Growth Engine",
   href: "thought-leadership-session-30-day-multi-platform-growth-engine.html",
