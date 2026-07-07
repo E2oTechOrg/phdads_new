@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/vetting-technical-personal-business-growth-coach.webp",
+  alt: "What to Demand When Vetting a Technical Personal Business Growth Coach",
+  href: "vetting-technical-personal-business-growth-coach.html",
+  title: "What to Demand When Vetting a Technical Personal Business Growth Coach",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/personal-business-growth-plan-double-consulting-margins.webp",
+  alt: "Structuring an Actionable Personal Business Growth Plan to Double Your Consulting Margins",
+  href: "personal-business-growth-plan-double-consulting-margins.html",
+  title: "Structuring an Actionable Personal Business Growth Plan to Double Your Consulting Margins",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/optimize-personal-brand-vector-graph-generative-ai-search-citations.webp",
+  alt: "How to Optimize Your Personal Brand Vector Graph for Generative AI Search Engine Citations",
+  href: "optimize-personal-brand-vector-graph-generative-ai-search-citations.html",
+  title: "How to Optimize Your Personal Brand Vector Graph for Generative AI Search Engine Citations",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/short-form-visual-slicing-playbook-executive-thought-leaders.webp",
   alt: "The Short-Form Visual Slicing Playbook for Executive Thought Leaders",
   href: "short-form-visual-slicing-playbook-executive-thought-leaders.html",
