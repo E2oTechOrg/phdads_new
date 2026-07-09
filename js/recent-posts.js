@@ -1,5 +1,47 @@
 const POSTS = [
   {
+  img: "img/blog/design-high-converting-visual-case-studies-storefront.webp",
+  alt: "How to Design High-Converting Visual Case Studies on Your Storefront",
+  href: "design-high-converting-visual-case-studies-storefront.html",
+  title: "How to Design High-Converting Visual Case Studies on Your Storefront",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/editing-formats-visual-pacing-habits-keep-professionals-glued-video.webp",
+  alt: "Editing Formats and Visual Pacing Habits That Keep Professionals Glued to Your Video Feeds",
+  href: "editing-formats-visual-pacing-habits-keep-professionals-glued-video.html",
+  title: "Editing Formats and Visual Pacing Habits That Keep Professionals Glued to Your Video Feeds",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/closing-enterprise-deals-b2b-personal-branding-pipelines-bypass-gatekeepers.webp",
+  alt: "Closing Enterprise Deals: Structuring B2B Personal Branding Pipelines That Bypass Gatekeepers",
+  href: "closing-enterprise-deals-b2b-personal-branding-pipelines-bypass-gatekeepers.html",
+  title: "Closing Enterprise Deals: Structuring B2B Personal Branding Pipelines That Bypass Gatekeepers",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/four-inbound-metrics-prove-personal-brand-value-scaling.webp",
+  alt: "The Four Inbound Metrics that Prove Your Personal Brand Value is Actively Scaling",
+  href: "four-inbound-metrics-prove-personal-brand-value-scaling.html",
+  title: "The Four Inbound Metrics that Prove Your Personal Brand Value is Actively Scaling",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/batch-content-systems-secure-30-day-omnipresent-visibility.webp",
+  alt: "Utilizing Batch Content Systems to Secure a 30-Day Omnipresent Visibility Feed",
+  href: "batch-content-systems-secure-30-day-omnipresent-visibility.html",
+  title: "Utilizing Batch Content Systems to Secure a 30-Day Omnipresent Visibility Feed",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/inbound-landing-page-layout-converts-traffic-auto-pilot.webp",
+  alt: "Architecting an Inbound Landing Page Layout that Converts Traffic on Auto-Pilot",
+  href: "inbound-landing-page-layout-converts-traffic-auto-pilot.html",
+  title: "Architecting an Inbound Landing Page Layout that Converts Traffic on Auto-Pilot",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/vetting-technical-personal-business-growth-coach.webp",
   alt: "What to Demand When Vetting a Technical Personal Business Growth Coach",
   href: "vetting-technical-personal-business-growth-coach.html",
