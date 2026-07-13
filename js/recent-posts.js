@@ -1,5 +1,47 @@
 const POSTS = [
   {
+  img: "img/blog/align-online-footprint-immediate-ai-knowledge-graph-matching.webp",
+  alt: "How to Align Your Online Footprint for Immediate AI Knowledge Graph Matching",
+  href: "align-online-footprint-immediate-ai-knowledge-graph-matching.html",
+  title: "How to Align Your Online Footprint for Immediate AI Knowledge Graph Matching",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/optimizing-website-visual-catalog-convert-premium-corporate-contracts.webp",
+  alt: "Optimizing Your Website's Visual Catalog to Convert Premium Corporate Contracts",
+  href: "optimizing-website-visual-catalog-convert-premium-corporate-contracts.html",
+  title: "Optimizing Your Website's Visual Catalog to Convert Premium Corporate Contracts",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/studio-editing-blueprints-technical-corporate-data-viral-linkedin-media.webp",
+  alt: "Studio Editing Blueprints That Turn Technical Corporate Data into Viral LinkedIn Media",
+  href: "studio-editing-blueprints-technical-corporate-data-viral-linkedin-media.html",
+  title: "Studio Editing Blueprints That Turn Technical Corporate Data into Viral LinkedIn Media",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/tracking-quantitative-personal-branding-metrics-drive-cold-financial-growth.webp",
+  alt: "Tracking the Quantitative Personal Branding Metrics That Drive Cold Financial Growth",
+  href: "tracking-quantitative-personal-branding-metrics-drive-cold-financial-growth.html",
+  title: "Tracking the Quantitative Personal Branding Metrics That Drive Cold Financial Growth",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/building-personal-business-growth-blueprint-cuts-out-billable-hour-delivery.webp",
+  alt: "Building a Personal Business Growth Blueprint That Cuts Out billable Hour Delivery",
+  href: "building-personal-business-growth-blueprint-cuts-out-billable-hour-delivery.html",
+  title: "Building a Personal Business Growth Blueprint That Cuts Out billable Hour Delivery",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/executing-comprehensive-personal-brand-audit-eliminate-reputation-risks.webp",
+  alt: "Executing a Comprehensive Personal Brand Audit to Eliminate Reputation Risks",
+  href: "executing-comprehensive-personal-brand-audit-eliminate-reputation-risks.html",
+  title: "Executing a Comprehensive Personal Brand Audit to Eliminate Reputation Risks",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/design-high-converting-visual-case-studies-storefront.webp",
   alt: "How to Design High-Converting Visual Case Studies on Your Storefront",
   href: "design-high-converting-visual-case-studies-storefront.html",
