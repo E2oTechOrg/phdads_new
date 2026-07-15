@@ -1,5 +1,47 @@
 const POSTS = [
   {
+  img: "img/blog/designing-professional-development-goals-eliminate-low-leverage-video-calls.webp",
+  alt: "Designing Professional Development Goals That Eliminate Low-Leverage Video Calls",
+  href: "designing-professional-development-goals-eliminate-low-leverage-video-calls.html",
+  title: "Designing Professional Development Goals That Eliminate Low-Leverage Video Calls",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/personal-business-growth-blueprint-productize-methodology-enterprise-teams.webp",
+  alt: "A Personal Business Growth Blueprint to Productize Your Methodology for Enterprise Teams",
+  href: "personal-business-growth-blueprint-productize-methodology-enterprise-teams.html",
+  title: "A Personal Business Growth Blueprint to Productize Your Methodology for Enterprise Teams",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/structuring-personal-branding-strategy-attract-fortune-500-consulting-retainers.webp",
+  alt: "Structuring a Personal Branding Strategy to Attract Fortune 500 Consulting Retainers",
+  href: "structuring-personal-branding-strategy-attract-fortune-500-consulting-retainers.html",
+  title: "Structuring a Personal Branding Strategy to Attract Fortune 500 Consulting Retainers",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/designing-professional-development-goals-cut-out-pointless-client-meetings.webp",
+  alt: "Designing Professional Development Goals That Cut Out Pointless Client Meetings",
+  href: "designing-professional-development-goals-cut-out-pointless-client-meetings.html",
+  title: "Designing Professional Development Goals That Cut Out Pointless Client Meetings",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/vet-select-mastermind-personal-business-growth-coach-system-scale.webp",
+  alt: "How to Vet and Select a Mastermind or Personal Business Growth Coach for System Scale",
+  href: "vet-select-mastermind-personal-business-growth-coach-system-scale.html",
+  title: "How to Vet and Select a Mastermind or Personal Business Growth Coach for System Scale",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/building-personal-business-growth-engine-high-ticket-private-memberships.webp",
+  alt: "Building a Personal Business Growth Engine via High-Ticket Private Memberships",
+  href: "building-personal-business-growth-engine-high-ticket-private-memberships.html",
+  title: "Building a Personal Business Growth Engine via High-Ticket Private Memberships",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/align-online-footprint-immediate-ai-knowledge-graph-matching.webp",
   alt: "How to Align Your Online Footprint for Immediate AI Knowledge Graph Matching",
   href: "align-online-footprint-immediate-ai-knowledge-graph-matching.html",
