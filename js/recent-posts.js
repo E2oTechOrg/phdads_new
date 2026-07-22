@@ -1,5 +1,68 @@
 const POSTS = [
   {
+  img: "img/blog/customizing-ai-captions-dynamic-kinetic-motion-mobile-retention.webp",
+  alt: "Customizing AI Captions with Dynamic Kinetic Motion for Mobile Retention",
+  href: "customizing-ai-captions-dynamic-kinetic-motion-mobile-retention.html",
+  title: "Customizing AI Captions with Dynamic Kinetic Motion for Mobile Retention",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/accelerating-rough-cuts-using-ai-text-based-video-editing.webp",
+  alt: "Accelerating Rough Cuts Using AI Text-Based Video Editing",
+  href: "accelerating-rough-cuts-using-ai-text-based-video-editing.html",
+  title: "Accelerating Rough Cuts Using AI Text-Based Video Editing",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/how-ai-voice-isolation-restores-terrible-location-audio-broadcast-quality.webp",
+  alt: "How AI Voice Isolation Restores Terrible Location Audio to Broadcast Quality",
+  href: "how-ai-voice-isolation-restores-terrible-location-audio-broadcast-quality.html",
+  title: "How AI Voice Isolation Restores Terrible Location Audio to Broadcast Quality",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/designing-multi-layered-text-motion-paths-muted-vertical-feeds.webp",
+  alt: "Designing Multi-Layered Text Motion Paths for Muted Vertical Feeds",
+  href: "designing-multi-layered-text-motion-paths-muted-vertical-feeds.html",
+  title: "Designing Multi-Layered Text Motion Paths for Muted Vertical Feeds",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/why-longer-focal-lengths-essential-premium-ecommerce-staging.webp",
+  alt: "Why Longer Focal Lengths Are Essential for Premium E-commerce Staging",
+  href: "why-longer-focal-lengths-essential-premium-ecommerce-staging.html",
+  title: "Why Longer Focal Lengths Are Essential for Premium E-commerce Staging",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/setting-up-in-house-ceo-studio-environment-commands-premium-respect.webp",
+  alt: "Setting Up an In-House CEO Studio Environment That Commands Premium Respect",
+  href: "setting-up-in-house-ceo-studio-environment-commands-premium-respect.html",
+  title: "Setting Up an In-House CEO Studio Environment That Commands Premium Respect",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/contractual-legal-safeguards-brand-needs-hiring-external-creators.webp",
+  alt: "Contractual and Legal Safeguards Every Brand Needs When Hiring External Creators",
+  href: "contractual-legal-safeguards-brand-needs-hiring-external-creators.html",
+  title: "Contractual and Legal Safeguards Every Brand Needs When Hiring External Creators",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/tracking-direct-financial-correlation-branded-search-volume-reduced-ad-costs.webp",
+  alt: "Tracking the Direct Financial Correlation Between Branded Search Volume and Reduced Ad Costs",
+  href: "tracking-direct-financial-correlation-branded-search-volume-reduced-ad-costs.html",
+  title: "Tracking the Direct Financial Correlation Between Branded Search Volume and Reduced Ad Costs",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/4-section-homepage-framework-maximizes-high-ticket-discovery-bookings.webp",
+  alt: "The 4-Section Homepage Framework That Maximizes High-Ticket Discovery Bookings",
+  href: "4-section-homepage-framework-maximizes-high-ticket-discovery-bookings.html",
+  title: "The 4-Section Homepage Framework That Maximizes High-Ticket Discovery Bookings",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/designing-professional-development-goals-eliminate-low-leverage-video-calls.webp",
   alt: "Designing Professional Development Goals That Eliminate Low-Leverage Video Calls",
   href: "designing-professional-development-goals-eliminate-low-leverage-video-calls.html",
