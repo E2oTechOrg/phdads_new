@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/generative-ai-inpainting-remove-onset-clutter-reflections.webp",
+  alt: "Deploying Generative AI In-painting to Remove On-Set Clutter and Reflections",
+  href: "generative-ai-inpainting-remove-onset-clutter-reflections.html",
+  title: "Deploying Generative AI In-painting to Remove On-Set Clutter and Reflections",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/ai-audio-diarization-isolate-overlapping-speakers-panel-recordings.webp",
+  alt: "Using AI Audio Diarization to Isolate Overlapping Speakers in Un-Isolated Panel Recordings",
+  href: "ai-audio-diarization-isolate-overlapping-speakers-panel-recordings.html",
+  title: "Using AI Audio Diarization to Isolate Overlapping Speakers in Un-Isolated Panel Recordings",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/optical-flow-ai-neural-interpolation-24fps-ultra-slow-mo.webp",
+  alt: "Using Optical Flow AI Neural Interpolation to Turn 24FPS Footage into Ultra-Slow-Mo",
+  href: "optical-flow-ai-neural-interpolation-24fps-ultra-slow-mo.html",
+  title: "Using Optical Flow AI Neural Interpolation to Turn 24FPS Footage into Ultra-Slow-Mo",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/customizing-ai-captions-dynamic-kinetic-motion-mobile-retention.webp",
   alt: "Customizing AI Captions with Dynamic Kinetic Motion for Mobile Retention",
   href: "customizing-ai-captions-dynamic-kinetic-motion-mobile-retention.html",
