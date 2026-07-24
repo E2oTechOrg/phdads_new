@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/ai-eye-contact-redirection-script-heavy-executive-videos.webp",
+  alt: "Deploying AI Eye-Contact Redirection for Script-Heavy Executive Videos",
+  href: "ai-eye-contact-redirection-script-heavy-executive-videos.html",
+  title: "Deploying AI Eye-Contact Redirection for Script-Heavy Executive Videos",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/ai-video-builders-export-50-hook-body-ad-permutations.webp",
+  alt: "Using AI Video Builders to Export 50 Hook-and-Body Ad Permutations in One Batch",
+  href: "ai-video-builders-export-50-hook-body-ad-permutations.html",
+  title: "Using AI Video Builders to Export 50 Hook-and-Body Ad Permutations in One Batch",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/ai-spatial-temporal-denoising-underexposed-night-event-footage.webp",
+  alt: "Using AI Spatial-Temporal Denoising to Save Underexposed Night Event Footage",
+  href: "ai-spatial-temporal-denoising-underexposed-night-event-footage.html",
+  title: "Using AI Spatial-Temporal Denoising to Save Underexposed Night Event Footage",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/generative-ai-inpainting-remove-onset-clutter-reflections.webp",
   alt: "Deploying Generative AI In-painting to Remove On-Set Clutter and Reflections",
   href: "generative-ai-inpainting-remove-onset-clutter-reflections.html",
