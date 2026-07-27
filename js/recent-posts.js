@@ -1,5 +1,47 @@
 const POSTS = [
   {
+  img: "img/blog/formatting-spatial-typography-doesnt-clutter-camera-framing.webp",
+  alt: "Formatting Spatial Typography that Doesn't Clutter Your Camera Framing",
+  href: "formatting-spatial-typography-doesnt-clutter-camera-framing.html",
+  title: "Formatting Spatial Typography that Doesn't Clutter Your Camera Framing",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/shoot-edit-modular-video-components-algorithmic-ad-testing.webp",
+  alt: "How to Shoot and Edit Modular Video Components for Algorithmic Ad Testing",
+  href: "shoot-edit-modular-video-components-algorithmic-ad-testing.html",
+  title: "How to Shoot and Edit Modular Video Components for Algorithmic Ad Testing",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/safeguarding-raw-4k-video-files-drive-failure-data-loss.webp",
+  alt: "Safeguarding Millions of Raw 4K Video Files Against Drive Failure and Data Loss",
+  href: "safeguarding-raw-4k-video-files-drive-failure-data-loss.html",
+  title: "Safeguarding Millions of Raw 4K Video Files Against Drive Failure and Data Loss",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/matching-mixed-camera-log-profiles-post-production-seamless-finish.webp",
+  alt: "Matching Mixed Camera Log Profiles in Post-Production for a Seamless Finish",
+  href: "matching-mixed-camera-log-profiles-post-production-seamless-finish.html",
+  title: "Matching Mixed Camera Log Profiles in Post-Production for a Seamless Finish",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/multi-camera-direction-tactics-live-events-stage-performances.webp",
+  alt: "Multi-Camera Direction Tactics for High-Speed Live Events and Stage Performances",
+  href: "multi-camera-direction-tactics-live-events-stage-performances.html",
+  title: "Multi-Camera Direction Tactics for High-Speed Live Events and Stage Performances",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/light-frame-camera-shots-widescreen-vertical-feeds-simultaneously.webp",
+  alt: "How to Light and Frame Camera Shots for Widescreen and Vertical Feeds Simultaneously",
+  href: "light-frame-camera-shots-widescreen-vertical-feeds-simultaneously.html",
+  title: "How to Light and Frame Camera Shots for Widescreen and Vertical Feeds Simultaneously",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/ai-eye-contact-redirection-script-heavy-executive-videos.webp",
   alt: "Deploying AI Eye-Contact Redirection for Script-Heavy Executive Videos",
   href: "ai-eye-contact-redirection-script-heavy-executive-videos.html",
