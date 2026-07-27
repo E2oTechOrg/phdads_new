@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/matching-mixed-camera-log-profiles-post-production-seamless-finish.webp",
+  alt: "Matching Mixed Camera Log Profiles in Post-Production for a Seamless Finish",
+  href: "matching-mixed-camera-log-profiles-post-production-seamless-finish.html",
+  title: "Matching Mixed Camera Log Profiles in Post-Production for a Seamless Finish",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/multi-camera-direction-tactics-live-events-stage-performances.webp",
+  alt: "Multi-Camera Direction Tactics for High-Speed Live Events and Stage Performances",
+  href: "multi-camera-direction-tactics-live-events-stage-performances.html",
+  title: "Multi-Camera Direction Tactics for High-Speed Live Events and Stage Performances",
+  date: "Jul 2026"
+},
+  {
+  img: "img/blog/light-frame-camera-shots-widescreen-vertical-feeds-simultaneously.webp",
+  alt: "How to Light and Frame Camera Shots for Widescreen and Vertical Feeds Simultaneously",
+  href: "light-frame-camera-shots-widescreen-vertical-feeds-simultaneously.html",
+  title: "How to Light and Frame Camera Shots for Widescreen and Vertical Feeds Simultaneously",
+  date: "Jul 2026"
+},
+  {
   img: "img/blog/ai-eye-contact-redirection-script-heavy-executive-videos.webp",
   alt: "Deploying AI Eye-Contact Redirection for Script-Heavy Executive Videos",
   href: "ai-eye-contact-redirection-script-heavy-executive-videos.html",
