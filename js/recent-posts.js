@@ -1,24 +1,45 @@
 const POSTS = [
   {
+  img: "img/blog/lighting-shutter-angle-science-ultra-high-fps-product-drops.webp",
+  alt: "Lighting and Shutter Angle Science for Ultra-High-FPS Product Drops",
+  href: "lighting-shutter-angle-science-ultra-high-fps-product-drops.html",
+  title: "Lighting and Shutter Angle Science for Ultra-High-FPS Product Drops",
+  date: "29 Jul 2026"
+},
+  {
+  img: "img/blog/oval-bokeh-horizontal-flare-optics-transform-commercial-video.webp",
+  alt: "How Oval Bokeh and Horizontal Flare Optics Transform Commercial Video Quality",
+  href: "oval-bokeh-horizontal-flare-optics-transform-commercial-video.html",
+  title: "How Oval Bokeh and Horizontal Flare Optics Transform Commercial Video Quality",
+  date: "29 Jul 2026"
+},
+  {
+  img: "img/blog/shoot-edit-month-short-form-video-assets-one-afternoon.webp",
+  alt: "How to Shoot and Edit a Month of Short-Form Video Assets in One Afternoon",
+  href: "shoot-edit-month-short-form-video-assets-one-afternoon.html",
+  title: "How to Shoot and Edit a Month of Short-Form Video Assets in One Afternoon",
+  date: "29 Jul 2026"
+},
+  {
   img: "img/blog/formatting-spatial-typography-doesnt-clutter-camera-framing.webp",
   alt: "Formatting Spatial Typography that Doesn't Clutter Your Camera Framing",
   href: "formatting-spatial-typography-doesnt-clutter-camera-framing.html",
   title: "Formatting Spatial Typography that Doesn't Clutter Your Camera Framing",
-  date: "Jul 2026"
+  date: "27 Jul 2026"
 },
   {
   img: "img/blog/shoot-edit-modular-video-components-algorithmic-ad-testing.webp",
   alt: "How to Shoot and Edit Modular Video Components for Algorithmic Ad Testing",
   href: "shoot-edit-modular-video-components-algorithmic-ad-testing.html",
   title: "How to Shoot and Edit Modular Video Components for Algorithmic Ad Testing",
-  date: "Jul 2026"
+  date: "27 Jul 2026"
 },
   {
   img: "img/blog/safeguarding-raw-4k-video-files-drive-failure-data-loss.webp",
   alt: "Safeguarding Millions of Raw 4K Video Files Against Drive Failure and Data Loss",
   href: "safeguarding-raw-4k-video-files-drive-failure-data-loss.html",
   title: "Safeguarding Millions of Raw 4K Video Files Against Drive Failure and Data Loss",
-  date: "Jul 2026"
+  date: "27 Jul 2026"
 },
   {
   img: "img/blog/matching-mixed-camera-log-profiles-post-production-seamless-finish.webp",
