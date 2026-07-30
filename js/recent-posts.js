@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/setting-up-multiband-sidechain-compression-commercial-music-beds.webp",
+  alt: "Setting Up Multi-Band Sidechain Compression for Commercial Music Beds",
+  href: "setting-up-multiband-sidechain-compression-commercial-music-beds.html",
+  title: "Setting Up Multi-Band Sidechain Compression for Commercial Music Beds",
+  date: "30 Jul 2026"
+},
+  {
+  img: "img/blog/color-grading-academy-color-encoding-system-protects-highlight-rolloff.webp",
+  alt: "Why Color Grading in Academy Color Encoding System Protects Your Highlight Roll-Off",
+  href: "color-grading-academy-color-encoding-system-protects-highlight-rolloff.html",
+  title: "Why Color Grading in Academy Color Encoding System Protects Your Highlight Roll-Off",
+  date: "30 Jul 2026"
+},
+  {
+  img: "img/blog/advanced-miking-techniques-high-movement-visual-shoots.webp",
+  alt: "Advanced Miking Techniques for High-Movement Visual Shoots",
+  href: "advanced-miking-techniques-high-movement-visual-shoots.html",
+  title: "Advanced Miking Techniques for High-Movement Visual Shoots",
+  date: "30 Jul 2026"
+},
+  {
   img: "img/blog/lighting-shutter-angle-science-ultra-high-fps-product-drops.webp",
   alt: "Lighting and Shutter Angle Science for Ultra-High-FPS Product Drops",
   href: "lighting-shutter-angle-science-ultra-high-fps-product-drops.html",
