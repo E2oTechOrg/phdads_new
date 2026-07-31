@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/font-weight-stroke-color-safety-rules-mobile-feed-ads.webp",
+  alt: "Font Weight, Stroke, and Color Safety Rules for Mobile Feed Ads",
+  href: "font-weight-stroke-color-safety-rules-mobile-feed-ads.html",
+  title: "Font Weight, Stroke, and Color Safety Rules for Mobile Feed Ads",
+  date: "31 Jul 2026"
+},
+  {
+  img: "img/blog/capture-50-modular-background-shots-single-location-shoot.webp",
+  alt: "How to Capture 50 Modular Background Shots on a Single Location Shoot",
+  href: "capture-50-modular-background-shots-single-location-shoot.html",
+  title: "How to Capture 50 Modular Background Shots on a Single Location Shoot",
+  date: "31 Jul 2026"
+},
+  {
+  img: "img/blog/testing-5-opening-visual-sequences-single-core-product-pitch.webp",
+  alt: "Testing 5 Opening Visual Sequences Against a Single Core Product Pitch",
+  href: "testing-5-opening-visual-sequences-single-core-product-pitch.html",
+  title: "Testing 5 Opening Visual Sequences Against a Single Core Product Pitch",
+  date: "31 Jul 2026"
+},
+  {
   img: "img/blog/setting-up-multiband-sidechain-compression-commercial-music-beds.webp",
   alt: "Setting Up Multi-Band Sidechain Compression for Commercial Music Beds",
   href: "setting-up-multiband-sidechain-compression-commercial-music-beds.html",
