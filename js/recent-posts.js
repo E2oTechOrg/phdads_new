@@ -1,5 +1,26 @@
 const POSTS = [
   {
+  img: "img/blog/mastering-high-contrast-backlighting-dramatic-commercial-character-intros.webp",
+  alt: "Mastering High-Contrast Backlighting for Dramatic Commercial Character Intros",
+  href: "mastering-high-contrast-backlighting-dramatic-commercial-character-intros.html",
+  title: "Mastering High-Contrast Backlighting for Dramatic Commercial Character Intros",
+  date: "01 Aug 2026"
+},
+  {
+  img: "img/blog/high-speed-camera-mechanics-shutter-speed-math-beverage-commercials.webp",
+  alt: "High-Speed Camera Mechanics and Shutter Speed Math for Beverage Commercials",
+  href: "high-speed-camera-mechanics-shutter-speed-math-beverage-commercials.html",
+  title: "High-Speed Camera Mechanics and Shutter Speed Math for Beverage Commercials",
+  date: "01 Aug 2026"
+},
+  {
+  img: "img/blog/setting-up-proxy-editing-workflows-cloud-storage-distributed-video-teams.webp",
+  alt: "Setting Up Proxy Editing Workflows and Cloud Storage for Distributed Video Teams",
+  href: "setting-up-proxy-editing-workflows-cloud-storage-distributed-video-teams.html",
+  title: "Setting Up Proxy Editing Workflows and Cloud Storage for Distributed Video Teams",
+  date: "01 Aug 2026"
+},
+  {
   img: "img/blog/font-weight-stroke-color-safety-rules-mobile-feed-ads.webp",
   alt: "Font Weight, Stroke, and Color Safety Rules for Mobile Feed Ads",
   href: "font-weight-stroke-color-safety-rules-mobile-feed-ads.html",
