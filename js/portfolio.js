@@ -51,6 +51,10 @@ const videos = [
   { cat: "meera-scans", client: "Meera Scans", title: "Clinic Promo IV", ytId: "fycWBtBhKh8", url: "https://youtube.com/shorts/fycWBtBhKh8?feature=share", short: true },
   { cat: "meera-scans", client: "Meera Scans", title: "Clinic Promo V", ytId: "R767WYmLm5Y", url: "https://youtube.com/shorts/R767WYmLm5Y?feature=share", short: true },
 
+  { cat: "meera-scans", client: "Meera Scans", title: "Clinic Promo VI", ytId: "tLOkfxsQqQs", url: "https://youtube.com/shorts/tLOkfxsQqQs?feature=share", short: true },
+  { cat: "meera-scans", client: "Meera Scans", title: "Clinic Promo VII", ytId: "wJ7wiyUKP9M", url: "https://youtube.com/shorts/wJ7wiyUKP9M?feature=share", short: true },
+  { cat: "meera-scans", client: "Meera Scans", title: "Clinic Promo VIII", ytId: "9gGyJEK9bWo", url: "https://youtube.com/shorts/9gGyJEK9bWo?feature=share", short: true },
+
   // PRANA ARC
   { cat: "prana-arc", client: "Prana Arc", title: "Product Reel I", ytId: "NBu_fCDRoQU", url: "https://youtube.com/shorts/NBu_fCDRoQU?feature=share", short: true },
   { cat: "prana-arc", client: "Prana Arc", title: "Product Reel II", ytId: "TR0BdB7GW1A", url: "https://youtube.com/shorts/TR0BdB7GW1A?feature=share", short: true },
@@ -89,6 +93,11 @@ const videos = [
   { cat: "vinayagam-hospital", client: "Vinayagam Hospital", title: "Hospital Brand Film III", ytId: "5VgnibLCqQI", url: "https://youtube.com/shorts/5VgnibLCqQI?feature=share", short: true },
   { cat: "vinayagam-hospital", client: "Vinayagam Hospital", title: "Hospital Brand Film IV", ytId: "MoF7ZgGhLjQ", url: "https://youtu.be/MoF7ZgGhLjQ", short: true },
 
+  { cat: "vinayagam-hospital", client: "Vinayagam Hospital", title: "Hospital Brand Film V", ytId: "ZMpGrUU5PKI ", url: "https://youtube.com/shorts/ZMpGrUU5PKI?feature=share", short: true },
+  { cat: "vinayagam-hospital", client: "Vinayagam Hospital", title: "Hospital Brand Film VI", ytId: "SW_-uNhbe-4", url: "https://youtube.com/shorts/SW_-uNhbe-4?feature=share", short: true },
+  { cat: "vinayagam-hospital", client: "Vinayagam Hospital", title: "Hospital Brand Film VII", ytId: "XPHfWtgv2pw", url: "https://youtube.com/shorts/XPHfWtgv2pw?feature=share", short: true },
+  { cat: "vinayagam-hospital", client: "Vinayagam Hospital", title: "Hospital Brand Film VIII", ytId: "4O3ZxUwIRj0", url: "https://youtube.com/shorts/4O3ZxUwIRj0?feature=share", short: true },
+
   // GATEWAY ACADEMY
   { cat: "education", client: "GATEWAY ACADEMY", title: "GATEWAY ACADEMY", ytId: "xlsuWSpjU84", url: "https://youtube.com/shorts/xlsuWSpjU84?feature=share", short: true },
 
@@ -121,6 +130,19 @@ const videos = [
   { cat: "arivu-homeo", client: "Arivu Homeo", title: "Video II", ytId: "GB96-4hI6Iw", url: "https://youtube.com/shorts/GB96-4hI6Iw?feature=share", short: true },
   { cat: "arivu-homeo", client: "Arivu Homeo", title: "Video III", ytId: "RwTLoCiWRo4", url: "https://youtube.com/shorts/RwTLoCiWRo4?feature=share", short: true },
   { cat: "arivu-homeo", client: "Arivu Homeo", title: "Video IV", ytId: "eShPLCCZCG0", url: "https://youtube.com/shorts/eShPLCCZCG0?feature=share", short: true },
+
+  // GOLDEN RIFLE CLUB
+{ cat: "golden-rifle-club", client: "Golden Rifle Club", title: "Video I", ytId: "CRrIcCtIrB8", url: "https://youtube.com/shorts/CRrIcCtIrB8?feature=share", short: true },
+  { cat: "golden-rifle-club", client: "Golden Rifle Club", title: "Video II", ytId: "fpVe5HpK5io", url: "https://youtube.com/shorts/fpVe5HpK5io?feature=share", short: true },
+  { cat: "golden-rifle-club", client: "Golden Rifle Club", title: "Video III", ytId: "kpuNLcwZ6Mo", url: "https://youtube.com/shorts/kpuNLcwZ6Mo?feature=share", short: true },
+  { cat: "golden-rifle-club", client: "Golden Rifle Club", title: "Video IV", ytId: "DKtt0gF6LQU", url: "https://youtube.com/shorts/DKtt0gF6LQU?feature=share", short: true },
+
+  // YOGALAKSHME PROMOTERS
+{ cat: "yogalakshme-promoters", client: "Yogalakshme Promoters", title: "Video I", ytId: "gjXVIPXHHds", url: "https://youtube.com/shorts/gjXVIPXHHds?feature=share", short: true },
+  { cat: "yogalakshme-promoters", client: "Yogalakshme Promoters", title: "Video II", ytId: "Jje_76l9mK0", url: "https://youtube.com/shorts/Jje_76l9mK0?feature=share", short: true },
+  { cat: "yogalakshme-promoters", client: "Yogalakshme Promoters", title: "Video III", ytId: "yc92y440DQI", url: "https://youtube.com/shorts/yc92y440DQI?feature=share", short: true },
+  // { cat: "yogalakshme-promoters", client: "Yogalakshme Promoters", title: "Video IV", ytId: "DKtt0gF6LQU", url: "https://youtube.com/shorts/DKtt0gF6LQU?feature=share", short: true },
+  
 ];
 
 
