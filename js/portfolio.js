@@ -399,6 +399,20 @@ function loadBatch(myToken) {
 }
 
 /* ════════════════════════════════════
+   GROUPED CATEGORIES
+   "doctors" isn't a real v.cat — it's a virtual tab that pulls
+   together videos from several real categories.
+════════════════════════════════════ */
+var DOCTOR_CATS = [
+  "arivu-homeo",
+  "impression-by-sai-shwetha",
+  "vinayagam-hospital",
+  "gani-hospital",
+  "prana-arc",
+  "meera-scans"
+];
+
+/* ════════════════════════════════════
    RENDER GRID
 ════════════════════════════════════ */
 function renderGrid(cat) {
@@ -412,7 +426,9 @@ function renderGrid(cat) {
   var grid = document.getElementById("shortsGrid");
   var filtered = (cat === "all"
     ? videos.slice()
-    : videos.filter(function (v) { return v.cat === cat; })
+    : cat === "doctors"
+      ? videos.filter(function (v) { return DOCTOR_CATS.indexOf(v.cat) !== -1; })
+      : videos.filter(function (v) { return v.cat === cat; })
   ).reverse();
 
   grid.innerHTML = "";
@@ -427,18 +443,46 @@ function renderGrid(cat) {
 }
 
 /* ════════════════════════════════════
+   URL ROUTING
+════════════════════════════════════ */
+function catFromPath() {
+  // "/portfolio/meera-scans" -> "meera-scans", "/portfolio" -> "all"
+  var parts = window.location.pathname.split("/").filter(Boolean);
+  var idx = parts.indexOf("portfolio");
+  if (idx === -1 || !parts[idx + 1]) return "all";
+  return parts[idx + 1];
+}
+
+function setActiveTab(cat) {
+  document.querySelectorAll(".filter-tab").forEach(function (t) {
+    t.classList.toggle("active", t.getAttribute("data-cat") === cat);
+  });
+}
+
+function selectCategory(cat, push) {
+  setActiveTab(cat);
+  renderGrid(cat);
+  if (push) {
+    var path = cat === "all" ? "/portfolio" : "/portfolio/" + cat;
+    history.pushState({ cat: cat }, "", path);
+  }
+}
+
+/* ════════════════════════════════════
    FILTER TABS
 ════════════════════════════════════ */
 document.getElementById("filterTabs").addEventListener("click", function (e) {
   var btn = e.target.closest(".filter-tab");
   if (!btn) return;
-  document.querySelectorAll(".filter-tab").forEach(function (t) { t.classList.remove("active"); });
-  btn.classList.add("active");
   btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-  renderGrid(btn.getAttribute("data-cat"));
+  selectCategory(btn.getAttribute("data-cat"), true);
+});
+
+window.addEventListener("popstate", function () {
+  selectCategory(catFromPath(), false);
 });
 
 /* ════════════════════════════════════
    INITIAL RENDER
 ════════════════════════════════════ */
-renderGrid("all");
+selectCategory(catFromPath(), false);
